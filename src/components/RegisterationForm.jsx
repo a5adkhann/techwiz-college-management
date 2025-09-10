@@ -1,9 +1,12 @@
 import React from 'react'
 import '../assets/css/registeration.css';
+import { Link } from 'react-router-dom';
+import BG from './BG';
 
 function RegisterationForm() {
   return (
     <>
+    <BG/>
       <div className="registration-form-container">
       <h1 className="form-title">Registration</h1>
       <form>
@@ -26,6 +29,10 @@ function RegisterationForm() {
           type="file"
           className="form-input"
         />
+
+        <div className='registeration-link'>
+          <p>Go to <Link to="/">Home</Link></p>
+        </div>
 
         <button type="submit" className="submit-button">
           Submit

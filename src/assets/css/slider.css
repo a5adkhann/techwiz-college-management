@@ -1,23 +1,20 @@
-/* slider.css */
-
 .slider-container {
   width: 100%;
-  height: 70vh;
+  height: 90vh;
   overflow: hidden;
   position: relative;
 }
 .each-slide {
-  height: 70vh;
+  height: 90vh;
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  overflow: hidden; /* Ensures ::after stays within bounds */
+  overflow: hidden; 
 }
 
-/* Overlay to darken background only */
 .each-slide::after {
   content: "";
   position: absolute;

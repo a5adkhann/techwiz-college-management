@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -12,13 +12,63 @@ const Navbar = () => {
 
       <div className={`nav-items ${menuOpen ? 'open' : ''}`}>
         <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/calendar">Event Calendar</Link></li>
-          <li><Link to="/events">Event Details</Link></li>
-          <li><Link to="/registeration">Registration</Link></li>
-          <li><Link to="/gallery">Gallery</Link></li>
-          <li><Link to="/contact">Contact Us</Link></li>
+          <li>
+            <NavLink 
+              to="/" 
+              exact
+              activeClassName="active"
+            >
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink 
+              to="/about" 
+              activeClassName="active"
+            >
+              About
+            </NavLink>
+          </li>
+          <li>
+            <NavLink 
+              to="/calendar" 
+              activeClassName="active"
+            >
+              Event Calendar
+            </NavLink>
+          </li>
+          <li>
+            <NavLink 
+              to="/events" 
+              activeClassName="active"
+            >
+              Event Details
+            </NavLink>
+          </li>
+          <li>
+            <NavLink 
+              to="/registeration" 
+              activeClassName="active"
+            >
+              Registeration
+            </NavLink>
+          </li>
+          <li>
+            <NavLink 
+              to="/gallery" 
+              activeClassName="active"
+            >
+              Gallery
+            </NavLink>
+          </li>
+          <li>
+            <NavLink 
+              to="/contact" 
+              activeClassName="active"
+            >
+              Contact Us
+            </NavLink>
+          </li>
         </ul>
       </div>
 

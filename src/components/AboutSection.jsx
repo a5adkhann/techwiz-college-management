@@ -2,63 +2,117 @@ import React from 'react';
 import '../assets/css/about.css'; // Make sure this file exists
 
 const AboutSection = () => {
-  return (
-    <div className="about-section">
-        <div className="about-header">
-          <h1>About Us</h1>
+    return (
+        <div className="about-section">
+            <div className="about-header">
+                <h1>About Us</h1>
+            </div>
+            <div className="about-block">
+                <h3 className="about-heading">About Our College</h3>
+                <p className="about-text">
+                    XYZ College of Engineering, located in [City, Country], is a premier institution affiliated with ABC University. Known for its academic excellence, modern campus facilities, and vibrant student community, the college is recognized as a hub for innovation and creativity. Over the years, it has built a strong tradition of nurturing talent through academics, cultural activities, and technical excellence.
+                </p>
+            </div>
+
+            <div className="about-block">
+                <h3 className="about-heading">Campus Highlights</h3>
+                <p className="about-text">
+                    Our campus is designed to inspire learning and collaboration, featuring advanced laboratories, smart classrooms, a state-of-the-art auditorium, and sports facilities. With a strong focus on holistic education, XYZ College has earned recognition for its active student clubs, entrepreneurial initiatives, and strong alumni network.
+                </p>
+            </div>
+
+            <div className="about-block">
+                <h3 className="about-heading">Technical (2023–24)</h3>
+                <p className="about-text">
+                    This section showcases the latest innovations, projects, and competitions in the technical field during the academic year 2023–24. It highlights students’ creativity and problem-solving abilities across domains such as robotics, coding, and tech design.
+                </p>
+
+            </div>
+
+            <div className="about-block">
+                <h3 className="about-heading">Cultural Night 2022 <br />
+                    Year: 2022–23 | Category: Cultural</h3>
+                <p className="about-text">
+                    Cultural Night 2022 was a celebration of diversity, talent, and heritage. From traditional dances to contemporary performances, the event brought students together to showcase the rich tapestry of cultures and creativity that define campus life.
+                </p>
+            </div>
+
+            <div className="about-block">
+                <h3 className="about-heading">GreenStep 2023 <br />
+
+                    Year: 2023–24 | Category: Sports</h3>
+                <p className="about-text">
+                   GreenStep 2023 promoted wellness through movement. This sports-themed event focused on sustainability and health, encouraging participants to take a “green step” towards fitness while enjoying team-building and outdoor activities.
+                </p>
+            </div>
+
+            <div className="about-block">
+                <h3 className="about-heading">Coderush 2023 <br />Year: 2023–24 | Category: Sports</h3>
+                <p className="about-text">
+                   Coderush 2023 was a high-intensity programming challenge where coders raced against time to crack algorithms and build solutions. With its competitive spirit, it fostered innovation, logical thinking, and technical collaboration.
+                </p>
+            </div>
+
+            <div className="about-block">
+                <h3 className="about-heading">Finance Frontier 2024 <br />
+                    Year: 2023–24 | Category: Sports</h3>
+                <p className="about-text">
+                   This event brought financial literacy to the forefront with simulations, mock stock trading, and entrepreneurial challenges. Finance Frontier 2024 was designed to inspire budding economists and business leaders of tomorrow.
+                </p>
+            </div>
+
+            <div className="about-block">
+                <h3 className="about-heading">Roborumble 2023 <br /> Year: 2023–24 | Category: Sports</h3>
+                <p className="about-text">
+                    Roborumble 2023 featured intense battles between student-built robots. Teams competed in both strategy and engineering skill, pushing the limits of automation, design, and teamwork in an electrifying environment.
+                </p>
+            
+            </div>
+
+            <div className="about-block">
+                <h3 className="about-heading">LitLantern 2024 <br /> Year: 2023–24 | Category: Cultural</h3>
+                <p className="about-text">
+                    LitLantern 2024 was a festival of words, celebrating literature, poetry, and storytelling. The event illuminated campus with the spark of imagination, featuring open mics, debates, and creative writing workshops.
+                </p>
+            </div>
+
+            <div className="about-block">
+                <h3 className="about-heading">Sportfiesta 2025 <br /> Year: 2023–24 | Category: Sports</h3>
+                <p className="about-text">
+                    A grand celebration of sportsmanship and competitive spirit, Sportfiesta 2025 brought together athletes from all disciplines. With thrilling matches and vibrant cheering, it became a memorable highlight of the academic year.
+                </p>
+            </div>
+
+            <div className="about-block">
+                <h3 className="about-heading">Pulse Night 2024 <br /> Year: 2023–24 | Category: Sports</h3>
+                <p className="about-text">
+                    Pulse Night 2024 was a high-energy music and dance extravaganza. Featuring live performances, DJ sets, and vibrant lights, the event captured the heartbeat of youth and became an unforgettable party night for students..
+                </p>
+            </div>
+
+            <div className="about-block">
+                <h3 className="about-heading">Stagestorm 2023 <br /> Year: 2023–24 | Category: Sports</h3>
+                <p className="about-text">
+                    Stagestorm 2023 brought drama, comedy, and creativity center stage. This theatrical event was a platform for aspiring performers, actors, and directors to showcase their talent in front of an enthusiastic audience.
+                </p>
+            </div>
+
+            <div className="about-block">
+                <h3 className="about-heading">Bioverse 2022 <br /> Year: 2023–24 | Category: Sports</h3>
+                <p className="about-text">
+                    Bioverse 2022 took students on a journey through the wonders of biology and environmental science. With exhibitions, quizzes, and interactive experiments, it sparked curiosity about the living world.
+                </p>
+            </div>
+
+            <div className="about-block">
+                <h3 className="about-heading">Canvas Carnival 2024 <br /> Year: 2023–24 | Category: Sports</h3>
+                <p className="about-text">
+                    Canvas Carnival 2024 was a riot of colors and creativity. Students displayed their artistic talents through painting, digital art, and installations, turning the campus into a vibrant gallery of youthful expression.
+                </p>
+            </div>
+
         </div>
-      <div className="about-block">
-        <h3 className="about-heading">About Our College</h3>
-        <p className="about-text">
-          XYZ College of Engineering, located in [City, Country], is a premier institution affiliated with ABC University. Known for its academic excellence, modern campus facilities, and vibrant student community, the college is recognized as a hub for innovation and creativity. Over the years, it has built a strong tradition of nurturing talent through academics, cultural activities, and technical excellence.
-        </p>
-      </div>
-
-      <div className="about-block">
-        <h3 className="about-heading">Campus Highlights</h3>
-        <p className="about-text">
-          Our campus is designed to inspire learning and collaboration, featuring advanced laboratories, smart classrooms, a state-of-the-art auditorium, and sports facilities. With a strong focus on holistic education, XYZ College has earned recognition for its active student clubs, entrepreneurial initiatives, and strong alumni network.
-        </p>
-      </div>
-
-      <div className="about-block">
-        <h3 className="about-heading">Annual Technical Events</h3>
-        <p className="about-text">
-          We host some of the most anticipated technical events of the year, encouraging students to showcase innovation and problem-solving skills:
-        </p>
-        <ul className="about-list">
-          <li><strong>TechFest:</strong> A platform for budding engineers to display groundbreaking projects and research.</li>
-          <li><strong>Hackathon:</strong> A 24-hour coding marathon challenging participants to create solutions for real-world problems.</li>
-          <li><strong>Robotics Championship:</strong> An arena where creativity meets technology, featuring competitive robotics challenges.</li>
-        </ul>
-      </div>
-
-      <div className="about-block">
-        <h3 className="about-heading">Cultural Celebrations</h3>
-        <ul className="about-list">
-          <li><strong>Annual Day:</strong> A grand celebration of achievements and performances.</li>
-          <li><strong>Music & Dance Nights:</strong> A platform for students to express their artistry and connect with peers.</li>
-          <li><strong>Talent Competitions:</strong> Encouraging students to explore and showcase their unique skills.</li>
-        </ul>
-      </div>
-
-      <div className="about-block">
-        <h3 className="about-heading">Sports & Community Activities</h3>
-        <ul className="about-list">
-          <li><strong>Inter-College Sports Meet:</strong> A competitive platform for sports enthusiasts.</li>
-          <li><strong>Blood Donation Drives:</strong> Encouraging students to contribute to society through community service.</li>
-          <li><strong>Alumni Meet:</strong> Strengthening bonds with graduates who have made their mark in various fields.</li>
-        </ul>
-      </div>
-
-      <div className="about-block">
-        <h3 className="about-heading">Event Calendar at a Glance</h3>
-        <p className="about-text">
-          Our events are thoughtfully scheduled across the academic year to ensure maximum participation and engagement. Technical fests and hackathons usually take place in February-March, cultural programs are held in April-May, while sports events and alumni gatherings occur throughout the year.
-        </p>
-      </div>
-    </div>
-  );
+    );
 };
 
 export default AboutSection;

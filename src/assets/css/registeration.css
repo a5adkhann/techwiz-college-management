@@ -1,12 +1,11 @@
 .registration-form-container {
   width: 90%;
-  max-width: 680px;
-  margin: 10% auto 0;
+  max-width: 380px;
+  margin: 5% auto 0;
   padding: 2.5rem;
   background-color: white;
-  border: 1px solid #d1d5db; /* gray-300 */
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* similar to shadow-xl */
-  border-radius: 10px;
+  border: 1px solid #d1d5db; 
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); 
 }
 
 .form-title {
@@ -56,4 +55,8 @@
 .submit-button:hover {
   background-color: black;
   color: white;
+}
+
+.registeration-link {
+  text-align: center;
 }

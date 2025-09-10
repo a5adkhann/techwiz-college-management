@@ -10,7 +10,7 @@ const Footer = () => {
                             <a href="./index.html">
                                 <img
                                     src="./logo.png"
-                                    style={{ width: '5vw', filter: 'invert(1)' }}
+                                    style={{ width: '5vw'}}
                                     alt="Logo"
                                 />          </a>
                             <p>

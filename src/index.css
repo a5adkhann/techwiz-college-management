@@ -6,21 +6,27 @@
     font-family: "Poppins", sans-serif;
 }
 
-/* Base Navbar Styles */
+body {
+  background-color: #f9fffe;
+}
+.nav-items ul li a.active {
+  color: #a0c4ff; 
+  font-weight: bold;
+}
+
+
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background: linear-gradient(to right, #0f1a75, #000000);
   color: white;
-  padding: 10px 20px;
+  padding: 10px 60px;
   position: sticky;
-  top: 0;
-  z-index: 999;
 }
 
 .nav-logo img {
-  width: 40px;
+  width: 80px;
 }
 
 /* Desktop Nav Items */
