@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "year": "2023-24",
+    "category": "Technical",
+    "imageUrl": "../galleryImages/gallery1.jpg"
+  },
+  {
+     "id": 2,
+    "year": "2022-23",
+    "category": "Cultural",
+    "imageUrl": "../galleryImages/gallery2.jpg"
+  },
+  {
+     "id": 3,
+    "year": "2023-24",
+    "category": "Sports",
+    "imageUrl": "../galleryImages/gallery3.jpg"
+  },
+  {
+     "id": 4,
+    "year": "2023-24",
+    "category": "Sports",
+    "imageUrl": "../galleryImages/gallery4.jpg"
+  },
+  {
+     "id": 5,
+    "year": "2023-24",
+    "category": "Sports",
+    "imageUrl": "../galleryImages/gallery5.jpg"
+  },
+  {
+     "id": 6,
+    "year": "2023-24",
+    "category": "Sports",
+    "imageUrl": "../galleryImages/gallery6.jpg"
+  },
+  {
+     "id": 7,
+    "year": "2023-24",
+    "category": "Sports",
+    "imageUrl": "../galleryImages/gallery7.jpg"
+  },
+  {
+     "id": 8,
+    "year": "2023-24",
+    "category": "Sports",
+    "imageUrl": "../galleryImages/gallery8.jpg"
+  },
+  {
+     "id": 9,
+    "year": "2023-24",
+    "category": "Sports",
+    "imageUrl": "../galleryImages/gallery9.jpg"
+  },
+  {
+     "id": 10,
+    "year": "2023-24",
+    "category": "Sports",
+    "imageUrl": "../galleryImages/gallery10.jpg"
+  },
+  {
+     "id": 11,
+    "year": "2023-24",
+    "category": "Sports",
+    "imageUrl": "../galleryImages/gallery11.jpg"
+  },
+  {
+    "id": 12,
+    "year": "2023-24",
+    "category": "Sports",
+    "imageUrl": "../galleryImages/gallery12.jpg"
+  }
+]

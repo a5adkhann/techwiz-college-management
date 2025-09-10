@@ -1,0 +1,42 @@
+/* slider.css */
+
+.slider-container {
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+  position: relative;
+}
+.each-slide {
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden; /* Ensures ::after stays within bounds */
+}
+
+/* Overlay to darken background only */
+.each-slide::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); 
+  z-index: 1;
+}
+
+.caption-overlay {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 20px 40px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 1.4;
+  white-space: pre-line;
+}

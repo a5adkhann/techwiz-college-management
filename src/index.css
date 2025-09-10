@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Base Navbar Styles */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to right, #0f1a75, #000000);
+  color: white;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.nav-logo img {
+  width: 40px;
+}
+
+/* Desktop Nav Items */
+.nav-items ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-items ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s, border-bottom 0.3s;
+  padding: 5px 0;
+  position: relative;
+}
+
+/* Hover underline effect */
+.nav-items ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-items ul li a:hover::after {
+  width: 100%;
+}
+
+.nav-items ul li a:hover {
+  color: #a0c4ff;
+}
+
+/* Toggle (hamburger icon) */
+.nav-toggle {
+  display: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .nav-items {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: linear-gradient(to right, #0f1a75, #000000);
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .nav-items.open {
+    max-height: 300px; /* enough to show all items */
+  }
+
+  .nav-items ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+}
+
+
+footer {
+    position: bottom;
+    bottom: 0;
+    background: linear-gradient(to right, #0f1a75, #000000);
+    color: white;
+    padding: 30px 20px;
+    margin-top: 80px;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.container li a:hover {
+    color: var(--white);
+    transition: 0.5s;
+}
+
+.col-1 {
+    flex-basis: 30%;
+    margin-bottom: 20px;
+}
+
+.col-1 p {
+    color: var(--grey);
+    font-size: 15px;
+    line-height: 30px;
+    padding-top: 25px;
+}
+
+.col-2 {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.col-2 h3 {
+    color: var(--white);
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.col-2 ul {
+    text-align: center;
+    list-style: none;
+}
+
+.col-2 ul li {
+    margin-bottom: 10px;
+}
+
+.col-2 ul li a {
+    color: var(--grey);
+    text-decoration: none;
+
+}
+
+.col-3 {
+    flex-basis: 15%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.col-3 h3 {
+    color: var(--white);
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.map-container {
+    width: 100%;
+    height: 150px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.col-4 {
+    flex-basis: 20%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.col-4 h3 {
+    color: var(--white);
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.footer-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 12px;
+}
+
+.footer-form input {
+    background: transparent;
+    width: 100%;
+    border: none;
+    color: var(--white);
+    outline: none;
+}
+
+.footer-form button {
+    background: transparent;
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+    outline: none;
+}
+
+.footer-form #mailbox {
+    padding-right: 10px;
+}
+
+.social-icons {
+    margin-top: 50px;
+}
+
+.social-icons a {
+    display: inline-block;
+    font-size: 18px;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    background: var(--white);
+    color: #25262A;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: all 0.5s ease;
+}
+
+.copyright {
+    width: 100%;
+    color: #8a8a8a;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+hr {
+    width: 90%;
+    margin: 20px auto;
+    border: none;
+    border-top: 1px solid var(--grey);
+}

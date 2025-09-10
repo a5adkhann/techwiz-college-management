@@ -1,0 +1,113 @@
+.events-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.events-title {
+  font-size: 2.5rem;
+  text-align: center;
+  color: black;
+  margin-bottom: 25px;
+}
+
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.controls select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.controls select:hover {
+  border-color: #3498db;
+}
+
+
+.events-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 600px) {
+  .events-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 900px) {
+  .events-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+
+.event-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+
+.event-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.event-header h3 {
+  font-size: 1.3rem;
+  color: black;
+  margin: 0;
+}
+
+.event-badge {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+}
+
+.event-badge.technical { background-color: blue; }
+.event-badge.cultural { background-color: red; }
+.event-badge.sports { background-color: green; }
+.event-badge.departmental { background-color: purple; }
+.event-badge.academic { background-color: purple; }
+
+.event-date,
+.event-venue,
+.event-description {
+  margin: 5px 0;
+  color: black;
+  font-size: 0.95rem;
+}
+
+.event-description {
+  margin-top: 10px;
+}
+
+.no-events {
+  text-align: center;
+  color: #888;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}

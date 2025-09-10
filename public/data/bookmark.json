@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "text": "Learn React",
+    "description": "Understand the basics of React.js framework.",
+    "imageURL": "https://example.com/react-logo.png"
+  },
+  {
+    "id": 2,
+    "text": "Explore sessionStorage",
+    "description": "Learn how to use sessionStorage for temporary data.",
+    "imageURL": "https://example.com/storage-icon.png"
+  },
+  {
+    "id": 3,
+    "text": "Programing",
+    "description": "Apply custom styles to components using CSS.",
+    "imageURL": "https://example.com/css-icon.png"
+  },
+  {
+    "id": 4,
+    "text": "Coding",
+    "description": "Apply custom styles to components using CSS.",
+    "imageURL": "https://example.com/css-icon.png"
+  },
+  {
+    "id": 5,
+    "text": "Software",
+    "description": "Apply custom styles to components using CSS.",
+    "imageURL": "https://example.com/css-icon.png"
+  }
+]

@@ -1,0 +1,49 @@
+.bookmark-container {
+ padding: 10px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+.bookmark-container h1{
+  text-align: center;
+}
+
+.content-list,
+.bookmarked-list {
+  list-style: none;
+  padding: 0;
+}
+
+.content-item {
+  display: flex;
+  justify-content: space-between;
+  background: #f0f0f0;
+  margin: 8px 0;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.content-item.bookmarked {
+  background-color: #fff4b3;
+}
+
+.content-item button {
+  background-color: blue;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.content-item button:hover {
+  background-color: blue;
+}
+
+.bookmarked-list li {
+  padding: 6px 10px;
+  background: #e0e0e0;
+  margin-bottom: 5px;
+  border-radius: 3px;
+}
