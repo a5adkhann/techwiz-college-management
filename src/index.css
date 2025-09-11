@@ -7,10 +7,10 @@
 }
 
 body {
-  background-color: #f9fffe;
+  color: white;
 }
 .nav-items ul li a.active {
-  color: #a0c4ff; 
+  color: #27A5DE; 
   font-weight: bold;
 }
 
@@ -19,7 +19,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: linear-gradient(to right, #0f1a75, #000000);
+  background: #000;
   color: white;
   padding: 10px 60px;
   position: sticky;
@@ -64,7 +64,7 @@ body {
 }
 
 .nav-items ul li a:hover {
-  color: #a0c4ff;
+  color: #27A5DE;
 }
 
 /* Toggle (hamburger icon) */
@@ -108,10 +108,9 @@ body {
 footer {
     position: bottom;
     bottom: 0;
-    background: linear-gradient(to right, #0f1a75, #000000);
+    background:#000000;
     color: white;
-    padding: 30px 20px;
-    margin-top: 80px;
+    padding:60px 20px 30px 20px;
 }
 
 .container {

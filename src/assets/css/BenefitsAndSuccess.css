@@ -1,0 +1,171 @@
+.benefits-success-wrapper {
+  padding: 60px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #000;
+  color: #333;
+  /* max-width: 1200px; */
+  /* margin: 0 auto; */
+  
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 28px;
+  text-align: center;
+  color: #FFF;
+  position: relative;
+  margin-bottom: 50px;
+  letter-spacing: 0.03em;
+}
+
+.benefits-section p {
+  max-width: 760px;
+  margin: 20px auto 50px auto;
+  font-size: 16px;
+  font-weight: 400;
+  color: #FFF;
+  line-height: 1.55;
+}
+.benefits-section h2 span{
+   font-size: 2rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #27A5DE 0%, #083F57 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.benefits-cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+.benefit-card {
+  background: linear-gradient(90deg, #27A5DE 0%, #083F57 100%);
+  border-radius: 12px;
+  max-width: 320px;
+  padding: 25px 30px 30px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); 
+  border-top: 5px solid #0d3b5e; 
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+/* Hover effect to scale up and add more depth */
+.benefit-card:hover {
+  transform: translateY(-5px); /* Lift the card slightly */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+}
+
+
+.benefit-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #FFF;
+  line-height: 1.2;
+}
+
+.benefit-card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.benefit-card ul li {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 14px;
+  font-size: 15px;
+  color: #FFF;
+  line-height: 1.4;
+}
+
+.benefit-card ul li::before {
+  content: "➤";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  color: #07044f;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.success-stories-section {
+  margin-top: 80px;
+}
+.success-stories-section h2 span{
+  font-size: 2rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #27A5DE 0%, #083F57 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.testimonials {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  flex-wrap: wrap;
+}
+
+.testimonial-card {
+  background: white;
+  border-radius: 12px;
+  max-width: 360px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.testimonial-header {
+  padding: 24px 22px;
+  background: linear-gradient(90deg, #27A5DE 0%, #083F57 100%);
+  color: white;
+  position: relative;
+  border-radius: 12px 12px 0 0;
+}
+
+.testimonial-header h4 {
+  margin: 0 0 6px 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.1;
+}
+
+.testimonial-header p {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+.testimonial-body {
+  padding: 25px 25px 30px;
+  color: #444;
+  font-size: 15px;
+  line-height: 1.55;
+  position: relative;
+}
+
+.testimonial-body .stars {
+  color: #f1c40f;
+  font-size: 18px;
+  margin-bottom: 14px;
+}
+
+@media (max-width: 900px) {
+  .benefits-cards, .testimonials {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .benefit-card, .testimonial-card {
+    max-width: 100%;
+  }
+}

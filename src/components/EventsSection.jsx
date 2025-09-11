@@ -1,71 +1,179 @@
-import React, { useEffect, useState } from 'react';
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import "../assets/css/eventsection.css";
+
+const events = [
+  {
+    id: 1,
+    title: "TechFest 2025",
+    date: "2025-07-20",
+    description:
+      "A day filled with innovation, workshops, and exciting tech showcases.",
+    image: "../public/event1.jpg",
+    detailPage: "techfest.html",
+  },
+  {
+    id: 2,
+    title: "Cultural Week",
+    date: "2025-08-05",
+    description:
+      "A vibrant celebration of arts, music, dance, and diverse traditions.",
+    image: "../public/event2.jpg",
+    detailPage: "culturalweek.html",
+  },
+  {
+    id: 3,
+    title: "AI Workshop",
+    date: "2025-09-15",
+    description:
+      "Hands-on sessions exploring artificial intelligence, machine learning, and real-world applications.",
+    image: "/../public/event3.jpg",
+    detailPage: "aiworkshop.html",
+  },
+  {
+    id: 4,
+    title: "Football Championship",
+    date: "2025-10-10",
+    description:
+      "An action-packed sports festival featuring competitions, fun activities, and team spirit.",
+    image: "../public/event4.jpg",
+    detailPage: "sportsgala.html",
+  },
+  {
+    id: 5,
+    title: "Science Exhibition",
+    date: "2025-11-05",
+    description:
+      "Students showcase innovative projects and experiments that inspire curiosity and discovery.",
+    image: "../public/event5.jpg",
+    detailPage: "scienceexhibition.html",
+  },
+  {
+    id: 6,
+    title: "Alumni Meet",
+    date: "2025-12-20",
+    description:
+      "A reunion event where alumni connect, share experiences, and celebrate achievements together.",
+    image: "../public/event6.jpg",
+    detailPage: "alumnimeet.html",
+  },
+];
 
 function EventsSection() {
-    const [events, setEvents] = useState([]);
+  const navigate = useNavigate();
 
-    useEffect(() => {
-        fetch('./data/events.json')
-            .then(res => res.json())
-            .then(data => setEvents(data))
-            .catch(err => console.error('Failed to load events:', err));
-    }, []);
+  const handleViewDetails = (id) => {
+    navigate(`/event/${id}`);
+  };
 
-    const getCountdown = (dateStr) => {
-        const eventDate = new Date(dateStr);
-        const now = new Date();
-        const diffTime = eventDate - now;
-        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-        if (diffDays > 0) return `${diffDays} days left`;
-        else if (diffDays === 0) return 'Event is today!';
-        else return 'Event passed';
-    };
+  return (
+    <div
+      className="events-section"
+      style={{
+        padding: "40px 20px",
+        backgroundColor: "#000",
+        color: "#fff",
+        fontFamily: "'Anton', sans-serif",
+        textAlign: "center",
+      }}
+    >
+      <h2
+        style={{
+          fontWeight: "bold",
+          marginBottom: "40px",
+          fontSize: "2.8rem",
+          color: "#3399cc",
+        }}
+      >
+        Our <span style={{ color: "#1e75a8" }}>Events</span>
+      </h2>
 
-    return (
-        <>
-        <div>
-            <h2 style={{textAlign: "center"}}>Upcoming Events</h2>
-            <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap', justifyContent: "center" }}>
-                {events.map(event => (
-                    <div key={event.title} style={{
-                        border: '1px solid #ddd',
-                        width: '250px',
-                        boxShadow: '0 2px 5px rgba(0,0,0,0.1)',
-                        borderRadius: '8px',
-                        position: 'relative'
-                    }}>
-                        <img
-                            src={event.thumbnail}
-                            alt={event.title}
-                            style={{ width: '100%', height: '140px', objectFit: 'cover', borderRadius: '5px' }}
-                        />
-                        <div style={{padding: "10px"}}>
-                        <h3>{event.title}</h3>
-                        <p><strong>Date:</strong> {new Date(event.date).toDateString()}</p>
-                        <p>{event.description}</p>
-                        <p style={{ fontWeight: 'bold', color: '#e74c3c', marginTop: '8px' }}>
-                            {getCountdown(event.date)}
-                        </p>
-                        <a
-                            href={event.detailPage}
-                            style={{
-                                display: 'inline-block',
-                                marginTop: '12px',
-                                backgroundColor: '#3498db',
-                                color: 'white',
-                                padding: '7px 12px',
-                                borderRadius: '5px',
-                                textDecoration: 'none'
-                            }}
-                        >
-                            Learn More
-                        </a>
-                        </div>
-                    </div>
-                ))}
-            </div>
-            </div>
-        </>
-    );
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+          gap: "40px",
+          justifyItems: "center",
+        }}
+      >
+        {events.map((event) => (
+          <div
+            key={event.id}
+            className="cards"
+            style={{
+              padding: "20px 25px",
+              borderRadius: "20px",
+              maxWidth: "280px",
+              backgroundColor: "#0a0a0a",
+              color: "#fff",
+              cursor: "pointer",
+              transition: "all 0.3s ease",
+            }}
+            onClick={() => handleViewDetails(event.id)}
+            onMouseEnter={(e) =>
+              (e.currentTarget.style.boxShadow =
+                "0 10px 25px rgba(51, 153, 204, 0.8), 0 0 20px #3399cc inset")
+            }
+            onMouseLeave={(e) =>
+              (e.currentTarget.style.boxShadow =
+                "0 10px 15px rgba(0, 153, 204, 0.4), 0 0 10px #1e75a8 inset")
+            }
+          >
+        
+            <h3 style={{ fontSize: "1.2rem", marginBottom: "10px" }}>
+              {event.title.toUpperCase()}
+            </h3>
+            <p
+              style={{
+                fontSize: "0.85rem",
+                marginBottom: "10px",
+                fontWeight: "600",
+              }}
+            >
+              <strong>Date:</strong> {new Date(event.date).toDateString()}
+            </p>
+            <p
+              style={{
+                fontSize: "0.85rem",
+                lineHeight: "1.3",
+                marginBottom: "15px",
+                fontWeight: "400",
+                color: "#ccc",
+              }}
+            >
+              {event.description}
+            </p>
+            <button
+              style={{
+                backgroundColor: "#e67e22",
+                color: "#000",
+                border: "none",
+                borderRadius: "6px",
+                padding: "8px 14px",
+                fontWeight: "bold",
+                cursor: "pointer",
+                fontFamily: "'Anton', sans-serif",
+                letterSpacing: "1px",
+                transition: "background-color 0.3s ease",
+              }}
+              onClick={(e) => {
+                e.stopPropagation();
+                handleViewDetails(event.id);
+              }}
+              onMouseEnter={(e) =>
+                (e.currentTarget.style.backgroundColor = "#d35400")
+              }
+              onMouseLeave={(e) =>
+                (e.currentTarget.style.backgroundColor = "#e67e22")
+              }
+            >
+              VIEW MORE DETAILS
+            </button>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 }
 
 export default EventsSection;

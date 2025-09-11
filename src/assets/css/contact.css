@@ -2,6 +2,10 @@
   padding: 3rem 1rem;
   min-height: 100vh;
   box-sizing: border-box;
+  background-image: url('./bg-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .contact-container {
@@ -20,10 +24,20 @@
   margin-bottom: 1rem;
 }
 
+.contact-header h1 span {
+font-size: 2rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #27A5DE 0%, #083F57 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
 .contact-header p {
   max-width: 700px;
   margin: 0 auto;
-  color: #4b5563;
+  color: #FFF;
   font-size: 1.125rem;
 }
 
@@ -36,7 +50,7 @@
   align-items: center;
   font-size: 1.5rem;
   font-weight: bold;
-  color: #111827;
+  color: #FFF;
   margin-bottom: 1.5rem;
 }
 

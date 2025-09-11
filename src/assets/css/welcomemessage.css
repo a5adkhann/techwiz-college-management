@@ -1,8 +1,29 @@
 /* Welcome Section Styles */
 .welcome-section {
-  background: linear-gradient(to right, #0f1a75, #000000);
+  position: relative;
+  background: url("../../../public/bg_hero.jpg") center/cover no-repeat;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
 }
+
+.welcome-section::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* adjust darkness */
+  z-index: 1;
+}
+
+.welcome-section > * {
+  position: relative;
+  z-index: 2; /* keep text above overlay */
+}
+
 
 .welcome-container {
   max-width: 1280px;
@@ -58,15 +79,18 @@
 }
 
 .college-name {
-  color: #fde047;
-  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(90deg, #27A5DE 0%, #083F57 100%);
+  -webkit-background-clip: text;
+  background-clip: text; 
+  color: transparent; 
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
 }
+
 
 .welcome-subtitle {
   font-size: 1.25rem;
   font-weight: 500;
   margin-bottom: 0.5rem;
-  color: #dbeafe;
 }
 
 @media (min-width: 768px) {
@@ -77,7 +101,6 @@
 
 .welcome-description {
   font-size: 1.125rem;
-  color: #bfdbfe;
   max-width: 48rem;
   margin: 0 auto;
 }
@@ -111,21 +134,25 @@
 }
 
 .btn-primary {
-  background-color: #facc15;
-  color: #111827;
-  font-weight: 700;
-  padding: 0.75rem 2rem;
-  border-radius: 9999px;
-  border: none;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  font-size: 1rem;
+   background: transparent;
+      border: 1px solid #fff;
+      padding: 15px 30px;
+      border-radius: 10px;
+      color: white;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 1px;
 }
 
 .btn-primary:hover {
-  background-color: #fde047;
-  transform: scale(1.05);
+   transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(0, 170, 255, 0.3);
+      border: 1px solid #27A5DE;
+      color: #27A5DE;
+
 }
 
 .btn-secondary {

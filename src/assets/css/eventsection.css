@@ -1,0 +1,82 @@
+/* Container for the entire section */
+.events-section {
+    background-color: #000;
+    /* black background */
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Section title */
+.events-section h2 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+}
+
+/* Highlighted part of the title */
+.events-section h2 span {
+    color: #2d8bcf;
+    /* bright blue */
+}
+
+/* Grid container for items */
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Single event/product card */
+.event-card {
+    background: transparent;
+    padding: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Icon container */
+.event-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 18px;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+}
+
+/* Title of each product */
+.event-title {
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #fff;
+}
+
+/* Description text */
+.event-description {
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    max-width: 240px;
+    color: #ddd;
+}
+
+/* On hover effect for each card */
+.event-card:hover {
+    background: rgba(45, 139, 207, 0.1);
+    box-shadow: 0 10px 20px rgba(45, 139, 207, 0.4);
+    border-radius: 25px;
+    color: #2d8bcf;
+    transform: translateY(-6px);
+    transition: all 0.3s ease;
+}

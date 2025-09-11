@@ -1,74 +1,86 @@
 [
   {
     "id": 1,
-    "year": "2023-24",
-    "category": "Technical",
+    "title": "Verve",
+    "year": "2023",
+    "category": "Cultural",
     "imageUrl": "../galleryImages/gallery1.jpg"
   },
   {
-     "id": 2,
-    "year": "2022-23",
-    "category": "Cultural",
+    "id": 2,
+    "title": "Innovatex",
+    "year": "2023",
+    "category": "Technical",
     "imageUrl": "../galleryImages/gallery2.jpg"
   },
   {
-     "id": 3,
-    "year": "2023-24",
-    "category": "Sports",
+    "id": 3,
+    "year": "2024",
+    "title": "Hackathon",
+    "category": "Technical",
     "imageUrl": "../galleryImages/gallery3.jpg"
   },
   {
-     "id": 4,
-    "year": "2023-24",
-    "category": "Sports",
+    "id": 4,
+    "title": "CodeRush",
+    "year": "2024",
+    "category": "Technical",
     "imageUrl": "../galleryImages/gallery4.jpg"
   },
   {
-     "id": 5,
-    "year": "2023-24",
+    "id": 5,
+    "title": "Football Tournament",
+    "year": "2023",
     "category": "Sports",
     "imageUrl": "../galleryImages/gallery5.jpg"
   },
   {
-     "id": 6,
-    "year": "2023-24",
-    "category": "Sports",
+    "id": 6,
+    "title": "RoboRumble",
+    "year": "2025",
+    "category": "Technical",
     "imageUrl": "../galleryImages/gallery6.jpg"
   },
   {
-     "id": 7,
-    "year": "2023-24",
+    "id": 7,
+    "title": "Cricket Tournament",
+    "year": "2024",
     "category": "Sports",
     "imageUrl": "../galleryImages/gallery7.jpg"
   },
   {
-     "id": 8,
-    "year": "2023-24",
+    "id": 8,
+    "title": "SportFiesta",
+    "year": "2025",
     "category": "Sports",
     "imageUrl": "../galleryImages/gallery8.jpg"
   },
   {
-     "id": 9,
-    "year": "2023-24",
-    "category": "Sports",
+    "id": 9,
+    "title": "Pulse Night",
+    "year": "2024",
+    "category": "Cultural",
     "imageUrl": "../galleryImages/gallery9.jpg"
   },
   {
-     "id": 10,
-    "year": "2023-24",
-    "category": "Sports",
+    "id": 10,
+    "title": "StageStorm",
+    "year": "2023",
+    "category": "Cultural",
     "imageUrl": "../galleryImages/gallery10.jpg"
   },
   {
-     "id": 11,
-    "year": "2023-24",
+    "id": 11,
+    "title": "Badminton Tournament",
+    "year": "2025",
     "category": "Sports",
     "imageUrl": "../galleryImages/gallery11.jpg"
   },
   {
     "id": 12,
-    "year": "2023-24",
-    "category": "Sports",
+    "title": "Canvas Carvinal",
+    "year": "2025",
+    "category": "Cultural",
     "imageUrl": "../galleryImages/gallery12.jpg"
   }
 ]

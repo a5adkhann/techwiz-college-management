@@ -103,7 +103,7 @@ const ContactSection = () => {
     <div className="contact-section">
       <div className="contact-container">
         <div className="contact-header">
-          <h1>Contact Us</h1>
+          <h1>Contact <span> US </span></h1>
           <p>
             Get in touch with our faculty coordinators and student representatives for any event-related queries.
             We're here to help make your college events successful!

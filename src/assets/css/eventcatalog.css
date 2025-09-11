@@ -2,6 +2,10 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 30px 20px;
+  background-image: url('./bg-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .events-title {

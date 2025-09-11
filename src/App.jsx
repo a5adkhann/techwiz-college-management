@@ -7,17 +7,12 @@ import Contact from './pages/Contact'
 import Registeration from './pages/Registeration'
 import Footer from './components/Footer'
 import Gallery from './pages/Gallery'
-import toast, { Toaster } from 'react-hot-toast'
 
 const App = () => {
 
   const location = useLocation();
 
   const hideNavbarFooter = location.pathname === '/registeration';
-
-  useEffect(() => {
-    toast.success("Welcome to Campus Connect")
-  }, [])
 
   return (
     <>
@@ -31,11 +26,6 @@ const App = () => {
       </Routes>
 
       {!hideNavbarFooter && <Footer />}
-
-      <Toaster
-        position="top-center"
-        reverseOrder={false}
-      />
     </>
   )
 }
