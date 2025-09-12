@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import '../assets/css/aboutMain.css'
 
 const AboutMain = () => {
@@ -40,9 +41,11 @@ const AboutMain = () => {
               ))}
             </div>
             <div className='cta-buttons'>
+              <Link to="/about">
             <button className="btn-primary">
               Read More
             </button>
+            </Link>
             </div>
           </div>
           

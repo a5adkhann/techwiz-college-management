@@ -1,11 +1,8 @@
-/* src/assets/css/eventdetail.css */
-
 .event-detail-container {
   padding: 50px 20px;
   background-color: #0a0a0a;
   color: #fff;
   min-height: 100vh;
-  font-family: "Poppins", sans-serif;
 }
 
 .back-btn {
@@ -26,14 +23,13 @@
 }
 
 .event-detail-card {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
   background: #111;
   border-radius: 15px;
   padding: 30px;
   box-shadow: 0 10px 25px rgba(39, 165, 222, 0.2);
-  align-items: center;
 }
 
 .event-detail-image {
@@ -41,7 +37,7 @@
 }
 
 .event-detail-image img {
-  width: 100%;
+  width: 40%;
   border-radius: 12px;
   object-fit: cover;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);

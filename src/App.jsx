@@ -8,6 +8,8 @@ import Registeration from './pages/Registeration'
 import Footer from './components/Footer'
 import Gallery from './pages/Gallery'
 import EventDetail from './components/EventDetail'
+import EventCalender from './pages/EventCalender'
+import EventCatalog from './components/EventCatalog'
 
 const App = () => {
 
@@ -24,6 +26,8 @@ const App = () => {
         <Route path='/contact' element={<Contact />}></Route>
         <Route path='/registeration' element={<Registeration />}></Route>
         <Route path='/gallery' element={<Gallery />}></Route>
+        <Route path='/calendar' element={<EventCalender />}></Route>
+        <Route path='/events' element={<EventCatalog />}></Route>
         <Route path='/event/:id' element={<EventDetail />}></Route>
       </Routes>
 

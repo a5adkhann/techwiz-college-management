@@ -2,19 +2,19 @@
   {
     "id": 1,
     "name": "TechFest 2025",
-    "date": "2025-09-20",
+    "date": "2023-09-20",
     "time": "10:00 AM – 4:00 PM",
     "venue": "Main Auditorium",
-    "category": "cultural",
+    "category": "Cultural",
     "description": "A cultural and technical festival bringing students together."
   },
   {
     "id": 2,
     "name": "AI Workshop",
-    "date": "2025-08-15",
+    "date": "2024-08-15",
     "time": "2:00 PM – 5:00 PM",
     "venue": "Lab 302",
-    "category": "academic",
+    "category": "Academic",
     "description": "Hands-on workshop on Artificial Intelligence basics."
   },
   {
@@ -23,25 +23,34 @@
     "date": "2025-07-10",
     "time": "5:00 PM – 8:00 PM",
     "venue": "Sports Ground",
-    "category": "sports",
+    "category": "Sports",
     "description": "Inter-department football tournament final match."
   },
   {
     "id": 4,
     "name": "Coding Hacking",
-    "date": "2025-10-05",
+    "date": "2023-10-05",
     "time": "9:00 AM – 9:00 PM",
     "venue": "Innovation Hub",
-    "category": "technical",
+    "category": "Technical",
     "description": "24-hour coding competition for students to build real-world projects."
   },
   {
     "id": 5,
     "name": "Departmental Seminar",
-    "date": "2025-11-12",
+    "date": "2024-11-12",
     "time": "11:00 AM – 1:00 PM",
     "venue": "Conference Room B",
-    "category": "departmental",
+    "category": "Departmental",
+    "description": "Seminar organized by the Computer Science department featuring guest speakers."
+  },
+  {
+    "id": 6,
+    "name": "Alumni Meet",
+    "date": "2025-11-12",
+    "time": "11:00 AM – 1:00 PM",
+    "venue": "Conference Room c",
+    "category": "Academic",
     "description": "Seminar organized by the Computer Science department featuring guest speakers."
   }
 ]

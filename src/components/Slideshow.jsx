@@ -1,5 +1,6 @@
 import React from "react";
 import { Fade } from "react-slideshow-image";
+import { Link } from "react-router-dom"
 import "react-slideshow-image/dist/styles.css";
 import "../assets/css/slider.css";
 
@@ -9,7 +10,7 @@ const slideImages = [
     title: "CELEBRATE SUCCESS WITH",
     heading: "GRADUATION EVENTS",
     text: "Organize memorable convocations, award ceremonies, and academic celebrations with ease.",
-    button: "EXPLORE",
+    button: "JOIN NOW",
   },
   {
     url: "./slide2.jpg",
@@ -23,7 +24,7 @@ const slideImages = [
     title: "SHOWCASE TALENT AT",
     heading: "CULTURAL FESTS",
     text: "From music nights to art exhibitions, manage registrations and schedules effortlessly.",
-    button: "GET STARTED",
+    button: "JOIN NOW",
   },
 ];
 
@@ -41,7 +42,9 @@ const Slideshow = () => {
               <h3 className="slide-title">{slide.title}</h3>
               <h1 className="slide-heading">{slide.heading}</h1>
               <p className="slide-text">{slide.text}</p>
+              <Link to="/registeration">
               <button className="slide-btn">{slide.button}</button>
+              </Link>
             </div>
           </div>
         ))}

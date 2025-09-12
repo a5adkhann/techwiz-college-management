@@ -146,29 +146,24 @@ const ContactSection = () => {
           </div>
 
           <div className="map-container">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.2412648718453!2d-73.98784368459391!3d40.74844797932861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus"
-              width="100%"
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.017006423899!2d67.07182317604698!3d24.863268745143863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33ea3db108f41%3A0x42acc4507358b160!2sAptech%20Learning%2C%20Shahrah%20e%20Faisal%20Center!5e0!3m2!1sen!2s!4v1757660293976!5m2!1sen!2s" width="100%"
               height="100%"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Campus Location"
-            />
+              title="Campus Location"></iframe>
           </div>
 
           <div className="location-details">
             <div>
               <h3>Address</h3>
               <p>
-                123 College Avenue<br />
-                University District<br />
-                New York, NY 10001
+                30-A, Progressive Center, Suite # 202-203, Main Shahra-e-Faisal, <br /> near Lal Kothi (house), Karachi, 75400
               </p>
             </div>
             <div>
-              <h3>Office Hours</h3>
+              <h3>Open Hours</h3>
               <p>
                 Monday - Friday: 9:00 AM - 5:00 PM<br />
                 Saturday: 10:00 AM - 2:00 PM<br />

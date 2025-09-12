@@ -49,17 +49,11 @@ function EventDetail() {
           </p>
           <p className="event-detail-description">{event.description}</p>
 
-          <div className="event-detail-buttons">
-            <a
-              href={event.detailPage || "#"}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="detail-btn"
-            >
-              View Full Details
-            </a>
-            <button className="register-btn">Register Now</button>
-          </div>
+           <div className='cta-buttons' style={{display: "flex", justifyContent: "left"}}>
+            <button className="btn-primary">
+              Register
+            </button>
+            </div>
         </div>
       </div>
     </div>

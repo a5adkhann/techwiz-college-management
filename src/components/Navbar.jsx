@@ -37,7 +37,7 @@ const Navbar = () => {
   {/* Bookmark Icon */ }
   <button
     className="bookmark-toggle"
-    onClick={() => setSidebarOpen(true)}
+    onClick={() => setSidebarOpen(!sidebarOpen)} // 👈 toggle
   >
     <i className="ri-bookmark-line"></i>
     {data.length > 0 && (
@@ -46,6 +46,7 @@ const Navbar = () => {
       </span>
     )}
   </button>
+
 
   return (
     <>
@@ -57,27 +58,42 @@ const Navbar = () => {
         <div className={`nav-items ${menuOpen ? "open" : ""}`}>
           <ul>
             <li>
-              <NavLink to="/" end activeClassName="active">Home</NavLink>
+              <NavLink to="/" end activeClassName="active" onClick={() => setMenuOpen(false)}>
+                Home
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/about" activeClassName="active">About</NavLink>
+              <NavLink to="/about" activeClassName="active" onClick={() => setMenuOpen(false)}>
+                About
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/calendar" activeClassName="active">Event Calendar</NavLink>
+              <NavLink to="/calendar" activeClassName="active" onClick={() => setMenuOpen(false)}>
+                Event Calendar
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/events" activeClassName="active">Event Details</NavLink>
+              <NavLink to="/events" activeClassName="active" onClick={() => setMenuOpen(false)}>
+                Event Details
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/registeration" activeClassName="active">Registeration</NavLink>
+              <NavLink to="/registeration" activeClassName="active" onClick={() => setMenuOpen(false)}>
+                Registeration
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/gallery" activeClassName="active">Gallery</NavLink>
+              <NavLink to="/gallery" activeClassName="active" onClick={() => setMenuOpen(false)}>
+                Gallery
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/contact" activeClassName="active">Contact Us</NavLink>
+              <NavLink to="/contact" activeClassName="active" onClick={() => setMenuOpen(false)}>
+                Contact Us
+              </NavLink>
             </li>
           </ul>
+
         </div>
 
         {/* Mobile Toggle */}
@@ -88,7 +104,7 @@ const Navbar = () => {
         {/* Bookmark Icon */}
         <button
           className="bookmark-toggle"
-          onClick={() => setSidebarOpen(true)}
+          onClick={() => setSidebarOpen(!sidebarOpen)}
         >
           <i className="ri-bookmark-line"></i>
           {bookmarks.length > 0 && (

@@ -1,6 +1,9 @@
 .events-container {
   padding: 40px 20px;
-  background-color: black;
+  background: url('./bg-image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .events-title {

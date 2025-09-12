@@ -1,8 +1,9 @@
 import React from 'react';
 import { Calendar, Users, Bell } from 'lucide-react';
 import '../assets/css/welcomemessage.css';
+import { Link } from 'react-router-dom';
 
-const WelcomeMessage = ({ collegeName = "Campus Connect" }) => {
+const WelcomeMessage = ({ collegeName = "Campus" }) => {
   return (
     <section className="welcome-section">
       <div className="welcome-container">
@@ -14,7 +15,7 @@ const WelcomeMessage = ({ collegeName = "Campus Connect" }) => {
               <span className="college-name">
                 {collegeName}
               </span>{' '}
-              Event
+              Connect
             </h1>
             <p className="welcome-subtitle">
               Stay Updated, Stay Involved!
@@ -26,16 +27,21 @@ const WelcomeMessage = ({ collegeName = "Campus Connect" }) => {
 
           {/* Call to Action Buttons */}
           <div className="cta-buttons">
-            <button className="btn-primary">
-              Explore Events
-            </button>
+            <Link to="/calendar">
+              <button className="btn-primary">
+                Explore Events
+              </button>
+            </Link>
           </div>
 
           {/* User Types Badge */}
           <div className="user-badge-container">
             <div className="user-badge">
               <span className="user-types">
-                🎓 Students • 👨‍🏫 Staff • 👥 Guests Welcome
+                Welcome
+                🎓 Students
+                👨‍🏫 Staff
+                👥 Guests
               </span>
             </div>
           </div>
