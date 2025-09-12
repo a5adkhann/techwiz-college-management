@@ -6,12 +6,12 @@ const BenefitsAndSuccess = () => {
     return (
         <div className="benefits-success-wrapper">
             <section className="benefits-section">
-                <h2>Benefits Of College Event <span>Management Software</span></h2>
-                <p>
+                <h2 data-aos="fade-up" data-aos-duration="2000">Benefits Of College Event <span>Management Software</span></h2>
+                <p data-aos="fade-up" data-aos-duration="2000">
                     To efficiently organize and manage college events, the administration and faculty must utilize a comprehensive Event Management System that offers the following key benefits.
                 </p>
                 <div className="benefits-cards">
-                    <div className="benefit-card">
+                    <div className="benefit-card" data-aos="fade-up" data-aos-duration="2000">
                         <h3>Seamless Event Communication</h3>
                         <ul>
                             <li>Bridge communication between event organizers, students, and staff</li>
@@ -20,7 +20,7 @@ const BenefitsAndSuccess = () => {
                             <li>Easy coordination through in-app messaging and emails</li>
                         </ul>
                     </div>
-                    <div className="benefit-card">
+                    <div className="benefit-card" data-aos="fade-up" data-aos-duration="2000">
                         <h3>Manage Multiple Events & Societies</h3>
                         <ul>
                             <li>Centralized platform to manage events across various departments</li>
@@ -29,7 +29,7 @@ const BenefitsAndSuccess = () => {
                             <li>Facilitate collaboration between societies and administration</li>
                         </ul>
                     </div>
-                    <div className="benefit-card">
+                    <div className="benefit-card" data-aos="fade-up" data-aos-duration="2000">
                         <h3>Automated Reports & Event Analytics</h3>
                         <ul>
                             <li>Automatic generation and delivery of daily event reports to organizers</li>
@@ -42,9 +42,9 @@ const BenefitsAndSuccess = () => {
             </section>
 
             <section className="success-stories-section">
-                <h2>Success <span>Stories</span></h2>
+                <h2 data-aos="fade-up" data-aos-duration="2000">Success <span>Stories</span></h2>
                 <div className="testimonials">
-                    <div className="testimonial-card">
+                    <div className="testimonial-card" data-aos="fade-left" data-aos-duration="2000">
                         <div className="testimonial-header blue">
                             <h4>Mr. C. Zothakhuma</h4>
                             <p>Registrar, Mizoram University</p>
@@ -57,7 +57,7 @@ const BenefitsAndSuccess = () => {
                         </div>
                     </div>
 
-                    <div className="testimonial-card">
+                    <div className="testimonial-card" data-aos="fade-right" data-aos-duration="2000">
                         <div className="testimonial-header blue">
                             <h4>Dr. Swapnil Madhamshettiwar</h4>
                             <p>Vice Principal, SP College, Chandrapur</p>

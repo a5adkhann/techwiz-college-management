@@ -27,7 +27,7 @@ const AboutSection = () => {
                 </div>
 
                 <div className="about-block">
-                    <div className="banner"  >
+                    <div className="banner" data-aos="fade-left">
                         <img src="./campushighlights.jpg" alt="" />
                     </div>
                     <div className="content" data-aos="fade-right">
@@ -39,7 +39,7 @@ const AboutSection = () => {
                 </div>
 
                 <div className="about-block">
-                    <div className='content'  >
+                    <div className='content' data-aos="fade-left" data-aos-duration="2000">
                         <h3 className="about-heading">Hackathon (2023–24)</h3>
                         <p className="about-text">
                             The Hackathon was an intensive coding marathon where students collaborated to build innovative solutions within a limited time. Participants formed teams to brainstorm ideas, design prototypes, and present working projects that addressed real-world challenges. From web and mobile applications to AI-driven tools, the event showcased creativity, teamwork, and problem-solving at its best.
@@ -54,7 +54,7 @@ const AboutSection = () => {
 
                 <div className="about-block">
 
-                    <div className="banner"  >
+                    <div className="banner" data-aos="fade-left" data-aos-duration="2000">
                         <img src="./culturalnight.jpg" alt="" />
                     </div>
 
@@ -68,7 +68,7 @@ const AboutSection = () => {
                 </div>
 
                 <div className="about-block">
-                    <div className="content"  >
+                    <div className="content" data-aos="fade-left" data-aos-duration="2000">
                         <h3 className="about-heading">GreenStep 2023 <br />
 
                             Year: 2023–24 | Category: Sports</h3>
@@ -76,13 +76,13 @@ const AboutSection = () => {
                             GreenStep 2023 promoted wellness through movement. This sports-themed event focused on sustainability and health, encouraging participants to take a “green step” towards fitness while enjoying team-building and outdoor activities.
                         </p>
                     </div>
-                    <div className="banner"  >
+                    <div className="banner" data-aos="fade-right" data-aos-duration="2000">
                         <img src="./greenstep.jpg" alt="" />
                     </div>
                 </div>
 
                 <div className="about-block">
-                    <div className="banner"  >
+                    <div className="banner" data-aos="fade-left" data-aos-duration="2000" >
                         <img src="./galleryImages/gallery4.jpg" alt="" />
                     </div>
 
@@ -95,12 +95,12 @@ const AboutSection = () => {
                 </div>
 
                 <div className="about-block">
-                    <div className="content"  >
+                    <div className="content" data-aos="fade-left" data-aos-duration="2000" >
                         <h3 className="about-heading">
                             Tech Innovators 2024 <br />
                             Year: 2023–24 | Category: Technology & Innovation
                         </h3>
-                        <p className="about-text" >
+                        <p className="about-text">
                             Tech Innovators 2024 was a platform for students to showcase their skills in technology and innovation. The event featured workshops on coding, AI, and robotics, along with a hackathon where teams competed to create groundbreaking tech solutions. The event aimed to fuel the creativity of aspiring tech entrepreneurs and engineers.
                         </p>
                     </div>
@@ -112,7 +112,7 @@ const AboutSection = () => {
 
 
                 <div className="about-block">
-                    <div className="banner"  >
+                    <div className="banner" data-aos="fade-left" data-aos-duration="2000" >
                         <img src="./galleryImages/gallery6.jpg" alt="" />
                     </div>
                     <div className="content" data-aos="fade-right" data-aos-duration="2000">
@@ -125,7 +125,7 @@ const AboutSection = () => {
                 </div>
 
                 <div className="about-block">
-                    <div className="content"  >
+                    <div className="content" data-aos="fade-left" data-aos-duration="2000" >
                         <h3 className="about-heading">
                             The Gridiron Clash 2024 <br />
                             Year: 2023–24 | Category: Sports
@@ -142,7 +142,7 @@ const AboutSection = () => {
 
                 <div className="about-block">
 
-                    <div className="banner"  >
+                    <div className="banner" data-aos="fade-left" data-aos-duration="2000" >
                         <img src="./sportfiesta.jpg" alt="" />
                     </div>
 
@@ -155,7 +155,7 @@ const AboutSection = () => {
                 </div>
 
                 <div className="about-block">
-                    <div className="content"  >
+                    <div className="content" data-aos="fade-left" data-aos-duration="2000" >
                         <h3 className="about-heading">Pulse Night 2024 <br /> Year: 2023–24 | Category: Sports</h3>
                         <p className="about-text">
                             Pulse Night 2024 was a high-energy music and dance extravaganza. Featuring live performances, DJ sets, and vibrant lights, the event captured the heartbeat of youth and became an unforgettable party night for students..
@@ -168,7 +168,7 @@ const AboutSection = () => {
                 </div>
 
                 <div className="about-block">
-                    <div className="banner"  >
+                    <div className="banner" data-aos="fade-left" data-aos-duration="2000" >
                         <img src="./galleryImages/gallery10.jpg" alt="" />
                     </div>
 

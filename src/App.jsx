@@ -10,11 +10,24 @@ import Gallery from './pages/Gallery'
 import EventDetail from './components/EventDetail'
 import EventCalender from './pages/EventCalender'
 import EventCatalog from './components/EventCatalog'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const App = () => {
 
   const location = useLocation();
 
   const hideNavbarFooter = location.pathname === '/registeration';
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // animation duration
+      once: true,     // animation only once
+    });
+  }, []);
+
+  useEffect(() => {
+    AOS.refresh(); // re-trigger animations when route changes
+  }, [location.pathname]);
 
   return (
     <>

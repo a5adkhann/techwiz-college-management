@@ -29,14 +29,7 @@ function EventsSection() {
         textAlign: "center",
       }}
     >
-      <h2
-        style={{
-          fontWeight: "bold",
-          marginBottom: "40px",
-          fontSize: "2.8rem",
-          color: "#3399cc",
-        }}
-      >
+      <h2 data-aos="fade-up" data-aos-duration="2000">
         Our <span style={{ color: "#1e75a8" }}>Events</span>
       </h2>
 
@@ -45,7 +38,8 @@ function EventsSection() {
           display: "grid",
           gridTemplateColumns: "repeat(auto-fit, minmax(22%, 1fr))",
           gap: "40px",
-          justifyItems: "center",
+          padding: "20px 25px",
+          placeItems: "center",
         }}
       >
         {events.map((event) => (
@@ -55,7 +49,6 @@ function EventsSection() {
             style={{
               padding: "20px 25px",
               borderRadius: "20px",
-              width: "380px",
               backgroundColor: "#0a0a0a",
               color: "#fff",
               cursor: "pointer",
@@ -70,6 +63,7 @@ function EventsSection() {
               (e.currentTarget.style.boxShadow =
                 "0 10px 15px rgba(0, 153, 204, 0.4), 0 0 10px #1e75a8 inset")
             }
+            data-aos="fade-up" data-aos-duration="2000"
           >
             {event.image && (
               <img

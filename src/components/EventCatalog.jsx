@@ -58,9 +58,9 @@ function EventCatalog() {
 
   return (
     <div className="events-container">
-      <h2 className="events-title">Campus <span>Events</span> Catalog </h2>
+      <h2 className="events-title" data-aos="fade-up" data-aos-duration="2000">Campus <span>Events</span> Catalog </h2>
 
-      <div className="filter-controls">
+      <div className="filter-controls" data-aos="fade-up" data-aos-duration="2000">
         <div className="filter-bar">
           <div className="year-filter">
             <select
@@ -108,7 +108,7 @@ function EventCatalog() {
       ) : filteredEvents.length > 0 ? (
         <div className="events-grid">
           {filteredEvents.map((event, index) => (
-            <div className="event-card" key={index}>
+            <div className="event-card" key={index} data-aos="fade-up" data-aos-duration="2000">
               <div className="event-header">
                 <h3>{event.name}</h3>
                 <h4 className={`event-badge ${event.category.toLowerCase()}`}>

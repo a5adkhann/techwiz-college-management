@@ -27,7 +27,7 @@ const BG = () => {
                 fullScreen: {enable: true, zIndex: -1},
                 background: {
                     color: {
-                        value: "#FFF",
+                        value: "#000",
                     },
                 },
                 fpsLimit: 120,

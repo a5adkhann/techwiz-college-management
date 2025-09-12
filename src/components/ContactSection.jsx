@@ -101,33 +101,33 @@ const ContactSection = () => {
 
   return (
     <div className="contact-section">
-      <div className="contact-container">
+      <div className="contact-container" data-aos="fade-up" data-aos-duration="2000">
         <div className="contact-header">
-          <h1>Contact <span> US </span></h1>
-          <p>
+          <h1 data-aos="fade-up" data-aos-duration="2000">Contact <span> US </span></h1>
+          <p data-aos="fade-up" data-aos-duration="2000">
             Get in touch with our faculty coordinators and student representatives for any event-related queries.
             We're here to help make your college events successful!
           </p>
         </div>
 
-        <div className="contact-group">
+        <div className="contact-group" data-aos="fade-up" data-aos-duration="2000">
           <h2 className="group-title">
             <Building2 className="icon blue" />
             Faculty Coordinators
           </h2>
-          <div className="contact-grid">
+          <div className="contact-grid" data-aos="fade-up" data-aos-duration="2000">
             {contacts.faculty?.map(contact => (
               <ContactCard key={contact.id} contact={contact} />
             ))}
           </div>
         </div>
 
-        <div className="contact-group">
+        <div className="contact-group" data-aos="fade-up" data-aos-duration="2000">
           <h2 className="group-title">
             <User className="icon green" />
             Student Coordinators
           </h2>
-          <div className="contact-grid">
+          <div className="contact-grid" data-aos="fade-up" data-aos-duration="2000">
             {contacts.students?.map(contact => (
               <ContactCard key={contact.id} contact={contact} />
             ))}
@@ -135,7 +135,7 @@ const ContactSection = () => {
         </div>
 
         <div className="location-section">
-          <div className="location-header">
+          <div className="location-header" data-aos="fade-up" data-aos-duration="2000">
             <h2>
               <MapPin className="icon red" />
               Campus Location
@@ -145,7 +145,7 @@ const ContactSection = () => {
             </p>
           </div>
 
-          <div className="map-container">
+          <div className="map-container" data-aos="fade-up" data-aos-duration="2000">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.017006423899!2d67.07182317604698!3d24.863268745143863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33ea3db108f41%3A0x42acc4507358b160!2sAptech%20Learning%2C%20Shahrah%20e%20Faisal%20Center!5e0!3m2!1sen!2s!4v1757660293976!5m2!1sen!2s" width="100%"
               height="100%"
               style={{ border: 0 }}
@@ -155,7 +155,7 @@ const ContactSection = () => {
               title="Campus Location"></iframe>
           </div>
 
-          <div className="location-details">
+          <div className="location-details" data-aos="fade-up" data-aos-duration="2000">
             <div>
               <h3>Address</h3>
               <p>

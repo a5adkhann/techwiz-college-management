@@ -5,6 +5,7 @@ import { Link } from "react-router-dom"; // Make sure this import is present
 const FeedbackSection = () => {
 
   return (
+    <div className="feedback">
     <div className="feedback-form-container">
       <h1 className="form-title">Feedback</h1>
       <form>
@@ -47,6 +48,7 @@ const FeedbackSection = () => {
           Submit
         </button>
       </form>
+    </div>
     </div>
   );
 };

@@ -95,10 +95,10 @@ const modules = [
 const CollegeModules = () => {
   return (
     <section className="modulesSection">
-      <h2 className="sectionTitle">Modules Of College <span>Management System</span></h2>
+      <h2 className="sectionTitle" data-aos="fade-up" data-aos-duration="2000">Modules Of College <span>Management System</span></h2>
       <div className="modulesGrid">
         {modules.map((mod, index) => (
-          <div className="moduleCard" key={index}>
+          <div className="moduleCard" key={index} data-aos="fade-up" data-aos-duration="2000">
             <div className="moduleIcon">{mod.icon}</div>
             <h3 className="moduleTitle">{mod.title}</h3>
             <ul className="moduleList">

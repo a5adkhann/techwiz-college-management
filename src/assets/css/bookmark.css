@@ -54,6 +54,7 @@
   place-items: center;
   border-bottom: 1px solid #ddd;
   padding-block: 20px;
+  margin-inline: auto;
 }
 
 .sidebar-header button {

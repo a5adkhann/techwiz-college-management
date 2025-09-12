@@ -1,82 +1,122 @@
-/* Container for the entire section */
-.events-section {
-    background-color: #000;
-    /* black background */
-    color: #fff;
-    padding: 60px 20px;
-    text-align: center;
-}
-
-/* Section title */
+/* Title */
 .events-section h2 {
-    text-align: center;
-    font-weight: 900;
-    font-size: 2.8rem;
-    margin-bottom: 40px;
-    letter-spacing: 2px;
+  font-size: 2.8rem;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
 }
 
-/* Highlighted part of the title */
 .events-section h2 span {
-    color: #2d8bcf;
-    /* bright blue */
+  color: #2d8bcf;
 }
 
-/* Grid container for items */
+/* Grid */
 .events-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 40px 30px;
-   width: 96%;
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  width: 96%;
+  margin: 0 auto;
 }
 
-/* Single event/product card */
+/* Card */
 .event-card {
-    background: transparent;
-    padding: 15px;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: background 0.3s ease, box-shadow 0.3s ease;
-    user-select: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  background: transparent;
+  padding: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-/* Icon container */
+/* Icon / Image */
 .event-icon {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 18px;
-    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+  width: 60px;
+  height: 60px;
+  margin-bottom: 18px;
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
 }
 
-/* Title of each product */
+.event-image {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+/* Title */
 .event-title {
-    font-weight: 700;
-    font-size: 1.2rem;
-    margin-bottom: 12px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    color: #fff;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #fff;
 }
 
-/* Description text */
+/* Description */
 .event-description {
-    font-weight: 400;
-    font-size: 0.9rem;
-    line-height: 1.5;
-    max-width: 240px;
-    color: #ddd;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  max-width: 90%;
+  color: #ddd;
+  margin-bottom: 15px;
 }
 
-/* On hover effect for each card */
+/* Hover effect */
 .event-card:hover {
-    background: rgba(45, 139, 207, 0.1);
-    box-shadow: 0 10px 20px rgba(45, 139, 207, 0.4);
-    border-radius: 25px;
-    color: #2d8bcf;
-    transform: translateY(-6px);
-    transition: all 0.3s ease;
+  background: rgba(45, 139, 207, 0.1);
+  box-shadow: 0 10px 20px rgba(45, 139, 207, 0.4);
+  border-radius: 25px;
+  color: #2d8bcf;
+  transform: translateY(-6px);
+  transition: all 0.3s ease;
+}
+
+/* ------------------ Responsive ------------------ */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .events-section h2 {
+    font-size: 2.2rem;
+  }
+  .events-grid {
+    gap: 25px;
+  }
+  .event-title {
+    font-size: 1.1rem;
+  }
+  .event-description {
+    font-size: 0.85rem;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 600px) {
+  .events-section {
+    padding: 30px 15px;
+  }
+  .events-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+  }
+  .events-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .event-card {
+    padding: 15px;
+  }
+  .event-title {
+    font-size: 1rem;
+  }
+  .event-description {
+    font-size: 0.8rem;
+  }
 }

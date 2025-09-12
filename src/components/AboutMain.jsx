@@ -19,7 +19,7 @@ const AboutMain = () => {
     <>
       <section className="hero-section">
         <div className="content-wrapper">
-          <div className="text-content">
+          <div className="text-content" data-aos="fade-left" data-aos-duration="2000">
             <div className="about-label">About Us</div>
             <h1 className="main-heading">
               EMPOWERING <span>CAMPUS</span> EVENTS
@@ -43,7 +43,7 @@ const AboutMain = () => {
             </div>
           </div>
           
-          <div className="visual-content">
+          <div className="visual-content" data-aos="fade-right" data-aos-duration="2000">
             <img src="./about-main.png"  />
             
             <div className="glow"></div>

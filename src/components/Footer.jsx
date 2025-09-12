@@ -2,55 +2,67 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Footer = () => {
-    return (
-        <>
-                <footer>
-                    <div class="container">
-                        <div class="col-1">
-                            <a href="./index.html">
-                                <img
-                                    src="./logo.png"
-                                    style={{ width: '5vw'}}
-                                    alt="Logo"
-                                />          </a>
-                            <p>
-                                CampusConnect is a student-built events platform that brings campus life together — listing academic, cultural, professional, and social events with easy RSVP and calendar integration. We partner with student groups and faculty to make organizing and attending events simple, inclusive, and sustainable. Join us to discover opportunities, share ideas, and make every campus moment count.
-                            </p>
-                        </div>
-                        <div class="col-2">
-                            <h3>Quick Links</h3>
-                            <ul>
-                                <li><Link to="/">Home</Link></li>
-                                <li><Link to="/about">About</Link></li>
-                                <li><Link to="/calendar">Event Calendar</Link></li>
-                                <li><Link to="/gallery">Gallery</Link></li>
-                                <li><Link to="/contact">Contact Us</Link></li>
-                                <li><Link to="/registeration">Registeration</Link></li>
-                            </ul>
-                        </div>
-                      
-                        <div class="col-4">
-                            <h3>Newsletter</h3>
-                            <form class="footer-form">
-                                <i class="ri-mail-line" id="mailbox"></i>
-                                <input type="email" placeholder="Enter your email" required />
-                                <button><i class="ri-arrow-right-line"></i></button>
-                            </form>
-                            <div class="social-icons">
-                                <a href="https://www.facebook.com/" target="_blank"><i class="ri-facebook-circle-fill"></i></a>
-                                <a href="https://x.com/" target="_blank"><i class="ri-twitter-x-line"></i></a>
-                                <a href="https://www.instagram.com/" target="_blank"><i class="ri-instagram-line"></i></a>
-                                <a href="https://www.linkedin.com/" target="_blank"><i class="ri-linkedin-fill"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <hr />
-                    <div class="copyright">
-                        <p>Â© 2025-2025 - All Rights Reserved.</p>
-                    </div>
-                </footer>
-        </>
-    )
+  return (
+    <>
+      <footer>
+        <div className="container">
+          {/* Column 1 - About */}
+          <div className="col-1">
+            <Link to="/">
+              <img src="./logo.png" style={{ width: '80px' }} alt="Logo" />
+            </Link>
+            <p>
+              CampusConnect is a student-driven platform that showcases academic,
+              cultural, and social events. Discover opportunities, RSVP easily,
+              and stay updated on campus life.
+            </p>
+          </div>
+
+          {/* Column 2 - Quick Links */}
+          <div className="col-2">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/about">About</Link></li>
+              <li><Link to="/calendar">Event Calendar</Link></li>
+              <li><Link to="/gallery">Gallery</Link></li>
+              <li><Link to="/contact">Contact Us</Link></li>
+              <li><Link to="/registeration">Registration</Link></li>
+            </ul>
+          </div>
+
+          {/* Column 3 - Contact Info */}
+          <div className="col-3">
+            <h3>Contact Info</h3>
+            <p>📍 Main Shahra-e-Faisal, near Lal Kothi (house), Karachi, 75400</p>
+            <p>📞 +92 300 1234567</p>
+            <p>✉️ info@campusconnect.edu</p>
+          </div>
+
+          {/* Column 4 - Newsletter */}
+          <div className="col-4">
+            <h3>Newsletter</h3>
+            <form className="footer-form">
+              <i className="ri-mail-line" id="mailbox"></i>
+              <input type="email" placeholder="Enter your email" required />
+              <button><i className="ri-arrow-right-line"></i></button>
+            </form>
+            <div className="social-icons">
+              <a href="https://www.facebook.com/" target="_blank"><i className="ri-facebook-circle-fill"></i></a>
+              <a href="https://x.com/" target="_blank"><i className="ri-twitter-x-line"></i></a>
+              <a href="https://www.instagram.com/" target="_blank"><i className="ri-instagram-line"></i></a>
+              <a href="https://www.linkedin.com/" target="_blank"><i className="ri-linkedin-fill"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+        <div className="copyright">
+          <p>© 2025 CampusConnect - All Rights Reserved.</p>
+        </div>
+      </footer>
+    </>
+  )
 }
 
 export default Footer

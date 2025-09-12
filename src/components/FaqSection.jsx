@@ -39,13 +39,14 @@ const FAQ = () => {
   return (
     <div className="faq">
     <div className="faq-container">
-      <h1 className="faq-title">Frequently <span>Asked Questions</span></h1>
+      <h1 className="faq-title" data-aos="fade-up" data-aos-duration="2000">Frequently <span>Asked Questions</span></h1>
      
       <div className="faq-list">
         {faqs.map((faq, index) => (
           <div
             key={index}
             className={`faq-item ${openIndex === index ? 'open' : ''}`}
+            data-aos="fade-up" data-aos-duration="2000"
           >
             <div
               className="faq-question"

@@ -1,110 +1,141 @@
 .about-section {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #1f2937; /* gray-800 */
-  padding: 0 200px;
-  background: black;
-  background: url("./bg-image.jpg");
-  /* background-size: cover; */
-  background-position: center;
-  padding-top: 20px;
+  padding: 0 100px;
+  background: url("./bg-image.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 40px;
 }
 
+/* About Banner */
 .about-banner {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center; /* To center the text */
-  color: white; /* Make the text white for better visibility against the background */
-  font-size: 2rem; /* Adjust font size */
-  font-weight: bold; /* Optional, to make the text bolder */
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  height: 35vh;
+  background: rgba(0, 0, 0, 0.5); /* Overlay for text visibility */
 }
 
-
-/* Header */
-.about-header h1 {
-  font-size: 2.8rem;
-  font-weight: 700;
-  color: #FFF; /* darker slate */
-  margin-bottom: 3rem;
-  position: relative;
-  display: inline-block;
-}
-
-.about-header h1::after {
-  content: "";
-  display: block;
-  width: 80px;
-  height: 4px;
+.about-banner h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
   background: linear-gradient(90deg, #2563eb, #06b6d4);
-  margin: 0.75rem auto 0;
-  border-radius: 2px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-/* Card style blocks */
+/* Blocks */
 .about-block {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  place-items: center;
+  gap: 2rem;
+  align-items: center;
   padding: 2rem;
   border-radius: 12px;
   transition: all 0.3s ease;
   border-left: 5px solid transparent;
+  background: rgba(0, 0, 0, 0.4); /* subtle overlay */
 }
-
 
 .about-block:hover {
-  transform: translateY(-4px);
+  transform: translateY(-6px);
   border-left: 5px solid #2563eb;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.25);
 }
 
+/* Banner images */
 .about-block .banner {
-  width: 500px;
+  max-width: 500px;
+  width: 100%;
 }
 
 .about-block .banner img {
   width: 100%;
-  height: 280px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+  transition: transform 0.3s ease;
+}
 
+.about-block .banner img:hover {
+  transform: scale(1.05);
 }
 
 /* Headings */
 .about-heading {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #FFF; /* slate-800 */
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-weight: 700;
+  color: #fff;
   margin-bottom: 1rem;
   line-height: 1.3;
 }
 
 .about-heading br {
-  display: none; /* Avoids breaking in smaller screens */
+  display: none; /* Prevent awkward line breaks */
 }
 
-@media (max-width: 600px) {
+/* Text */
+.about-text {
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+  line-height: 1.75;
+  color: #e5e7eb; /* light gray for readability */
+  text-align: justify;
+  max-width: 600px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 1024px) {
+  .about-section {
+    padding: 0 40px;
+  }
+
+  .about-block {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .about-block:nth-child(even) {
+    flex-direction: column-reverse; /* Alternate layout for variety */
+  }
+
+  .about-block .banner {
+    margin: 1rem auto;
+  }
+
   .about-heading {
-    font-size: 1.25rem;
+    font-size: 1.8rem;
+  }
+
+  .about-text {
+    text-align: left;
   }
 }
 
-.about-text {
-  font-size: 1rem;
-  line-height: 1.75;
-  color: #FFF; 
-  text-align: justify;
-}
+@media (max-width: 600px) {
+  .about-section {
+    padding: 0 20px;
+  }
 
-.about-list {
-  margin-top: 1rem;
-  padding-left: 1.25rem;
-}
+  .about-banner {
+    height: 25vh;
+    font-size: 1.8rem;
+  }
 
-.about-list li {
-  margin-bottom: 0.75rem;
-  color: #374151;
-  line-height: 1.6;
-}
+  .about-block {
+    padding: 1rem;
+    margin: 1.5rem 0;
+  }
 
-.about-list strong {
-  color: #2563eb; /* primary blue */
+  .about-heading {
+    font-size: 1.4rem;
+  }
+
+  .about-text {
+    font-size: 0.95rem;
+  }
 }

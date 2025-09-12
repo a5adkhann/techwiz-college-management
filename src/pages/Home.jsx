@@ -8,6 +8,7 @@ import AboutMain from '../components/AboutMain'
 import BenefitsAndSuccess from '../components/BenefitsAndSuccess'
 import CollegeModules from '../components/CollegeModules'
 import FAQ from '../components/FaqSection'
+import FeedbackSection from '../components/FeedbackSection'
 
 const Home = () => {
   return (
@@ -18,7 +19,7 @@ const Home = () => {
         <EventsSection/>
         <EventCatalog/>
         <FAQ/>
-        {/* <EventCatalog/> */}
+        <FeedbackSection/>
         <BenefitsAndSuccess/>
         <CollegeModules/>
         <ContactSection/>
