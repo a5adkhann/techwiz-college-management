@@ -48,11 +48,20 @@
 }
 
 .sidebar-header {
-  display: flex;
+  display: grid;
   justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
   border-bottom: 1px solid #ddd;
+  padding-block: 20px;
+}
+
+.sidebar-header button {
+  background: transparent;
+  border: 1px solid #27A5DE;
+  color: #FFF;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 .sidebar-content {
@@ -73,7 +82,7 @@
 
 .bookmarked-item span {
   font-size: 0.9rem;
-  color: #333;
+  color: #FFF;
 }
 
 .remove-btn {

@@ -27,7 +27,7 @@ const BG = () => {
                 fullScreen: {enable: true, zIndex: -1},
                 background: {
                     color: {
-                        value: "#FFFFFF",
+                        value: "#FFF",
                     },
                 },
                 fpsLimit: 120,
@@ -55,10 +55,10 @@ const BG = () => {
                 },
                 particles: {
                     color: {
-                        value: "#D1D5DB",
+                        value: "#FFF",
                     },
                     links: {
-                        color: "#D1D5DB",
+                        color: "#FFF",
                         distance: 150,
                         enable: true,
                         opacity: 0.5,

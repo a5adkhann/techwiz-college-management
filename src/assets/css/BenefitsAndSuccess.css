@@ -43,12 +43,13 @@ h2 {
   flex-wrap: wrap;
 }
 .benefit-card {
-  background: linear-gradient(90deg, #27A5DE 0%, #083F57 100%);
+  /* background: linear-gradient(90deg, #27A5DE 0%, #083F57 100%); */
+  background: black;
   border-radius: 12px;
   max-width: 320px;
   padding: 25px 30px 30px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); 
-  border-top: 5px solid #0d3b5e; 
+  border-top: 5px solid #27A5DE; 
   position: relative;
   transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
@@ -87,7 +88,7 @@ h2 {
   position: absolute;
   left: 0;
   top: 2px;
-  color: #07044f;
+  color: #27A5DE;
   font-weight: 700;
   font-size: 16px;
 }
@@ -112,12 +113,14 @@ h2 {
 }
 
 .testimonial-card {
-  background: white;
+  background: #000;
   border-radius: 12px;
   max-width: 360px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
   overflow: hidden;
   transition: box-shadow 0.3s ease;
+    border: 1px solid #27A5DE;
+
 }
 
 .testimonial-card:hover {
@@ -126,8 +129,7 @@ h2 {
 
 .testimonial-header {
   padding: 24px 22px;
-  background: linear-gradient(90deg, #27A5DE 0%, #083F57 100%);
-  color: white;
+  color: #27A5DE;
   position: relative;
   border-radius: 12px 12px 0 0;
 }
@@ -148,7 +150,7 @@ h2 {
 
 .testimonial-body {
   padding: 25px 25px 30px;
-  color: #444;
+  color: #FFF;
   font-size: 15px;
   line-height: 1.55;
   position: relative;

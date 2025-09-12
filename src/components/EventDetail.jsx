@@ -35,12 +35,10 @@ function EventDetail() {
       </button>
 
       <div className="event-detail-card">
-        {/* Left side image */}
         <div className="event-detail-image">
           <img src={event.image} alt={event.title} />
         </div>
 
-        {/* Right side content */}
         <div className="event-detail-content">
           <h1 className="event-detail-title">{event.title}</h1>
           <p className="event-detail-date">

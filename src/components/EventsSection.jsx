@@ -7,7 +7,6 @@ function EventsSection() {
   const navigate = useNavigate();
   const [events, setEvents] = useState([]);
 
-  // Fetch JSON from public/events.json
   useEffect(() => {
     axios
       .get("./data/events.json")
@@ -44,7 +43,7 @@ function EventsSection() {
       <div
         style={{
           display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+          gridTemplateColumns: "repeat(auto-fit, minmax(22%, 1fr))",
           gap: "40px",
           justifyItems: "center",
         }}
@@ -56,7 +55,7 @@ function EventsSection() {
             style={{
               padding: "20px 25px",
               borderRadius: "20px",
-              maxWidth: "280px",
+              width: "380px",
               backgroundColor: "#0a0a0a",
               color: "#fff",
               cursor: "pointer",
@@ -72,7 +71,6 @@ function EventsSection() {
                 "0 10px 15px rgba(0, 153, 204, 0.4), 0 0 10px #1e75a8 inset")
             }
           >
-            {/* Event Thumbnail */}
             {event.image && (
               <img
                 src={event.image}
@@ -87,12 +85,10 @@ function EventsSection() {
               />
             )}
 
-            {/* Event Title */}
             <h3 style={{ fontSize: "1.2rem", marginBottom: "10px" }}>
               {event.title.toUpperCase()}
             </h3>
 
-            {/* Event Date */}
             <p
               style={{
                 fontSize: "0.85rem",

@@ -58,7 +58,7 @@ function EventCatalog() {
 
   return (
     <div className="events-container">
-      <h2 className="events-title">Campus Events Catalog</h2>
+      <h2 className="events-title">Campus <span>Events</span> Catalog </h2>
 
       <div className="filter-controls">
         <div className="filter-bar">
@@ -111,9 +111,10 @@ function EventCatalog() {
             <div className="event-card" key={index}>
               <div className="event-header">
                 <h3>{event.name}</h3>
-                <span className={`event-badge ${event.category.toLowerCase()}`}>
+                <h4 className={`event-badge ${event.category.toLowerCase()}`}>
                   {event.category}
-                </span>
+                </h4>
+                  
               </div>
               <p className="event-date">
                 <i className="ri-calendar-line"></i>{" "}

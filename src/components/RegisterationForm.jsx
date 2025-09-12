@@ -7,6 +7,7 @@ function RegisterationForm() {
   return (
     <>
     <BG/>
+    <div className="overall-bg">
       <div className="registration-form-container">
       <h1 className="form-title">Registration</h1>
       <form>
@@ -38,6 +39,7 @@ function RegisterationForm() {
           Submit
         </button>
       </form>
+    </div>
     </div>
     </>
   )

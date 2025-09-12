@@ -1,8 +1,11 @@
 .event-detail-container {
-  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: #0a0a0a;
   color: #fff;
-  min-height: 100vh;
+  min-height: 90vh;
 }
 
 .back-btn {

@@ -15,12 +15,6 @@ const AboutMain = () => {
   "Support for Virtual & In-Person Events"
 ];
 
-
-  const handleReadMore = () => {
-    console.log('Read More clicked');
-    // Add your navigation logic here
-  };
-
   return (
     <>
       <section className="hero-section">

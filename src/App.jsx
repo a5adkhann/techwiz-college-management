@@ -10,7 +10,6 @@ import Gallery from './pages/Gallery'
 import EventDetail from './components/EventDetail'
 import EventCalender from './pages/EventCalender'
 import EventCatalog from './components/EventCatalog'
-
 const App = () => {
 
   const location = useLocation();

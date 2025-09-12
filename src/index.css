@@ -9,21 +9,56 @@
 body {
   color: white;
 }
+/*  */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #000; /* Initial background color */
+  color: white; /* Initial text color */
+  padding: 10px 60px;
+  /* position: sticky;  */
+  /* top: 0;  */
+  z-index: 1000; /* Keep the navbar on top of other content */
+  transition: background 0.3s, color 0.3s; /* Smooth transition for background and color */
+}
 
+.navbar.sticky {
+  background: transparent;
+  backdrop-filter: blur(25px); /* Change to white when sticky */
+  color: #FFF !important;
+}
+
+.nav-items ul li a {
+  color: inherit; /* Ensure text color adapts to navbar color */
+}
+
+.bookmark-toggle {
+  background: transparent; /* Transparent background for the bookmark button */
+  border: none; /* No border for the button */
+  color: inherit; /* Inherit text color */
+}
+
+/* Optional: Styling for when the navbar becomes sticky */
+.navbar.sticky .nav-items ul li a {
+  color: #FFF; /* Change the link color when sticky */
+}
+
+/*  */
 .nav-items ul li a.active {
   color: #27A5DE;
   font-weight: bold;
 }
 
 .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #000;
-  color: white;
-  padding: 10px 60px;
-  position: sticky;
-  z-index: 1000; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #000;
+    color: white;
+    padding: 10px 60px;
+    /* position: fixed; */
+    z-index: 1000;
 }
 
 .nav-logo img {
@@ -255,6 +290,10 @@ footer {
     margin-right: 10px;
     margin-bottom: 10px;
     transition: all 0.5s ease;
+}
+
+.social-icons a:hover {
+  color: #FFF;
 }
 
 .copyright {
