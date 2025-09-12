@@ -27,7 +27,7 @@ function EventCatalog() {
   }, []);
 
   const years = [2023, 2024, 2025];
-  const categories = ["Cultural", "Technical", "Sports","Academic","Departmental"];
+  const categories = ["Cultural", "Technical", "Sports", "Academic", "Departmental"];
 
   const filterEvents = () => {
     const filtered = events.filter((event) => {
@@ -51,7 +51,6 @@ function EventCatalog() {
     setFilteredEvents(filtered);
   };
 
-  // Re-filter whenever any filter changes
   useEffect(() => {
     filterEvents();
   }, [searchTerm, filteredYear, filteredCategory, events]);
@@ -61,11 +60,18 @@ function EventCatalog() {
       <h2 className="events-title" data-aos="fade-up" data-aos-duration="2000">Campus <span>Events</span> Catalog </h2>
 
       <div className="filter-controls" data-aos="fade-up" data-aos-duration="2000">
-        <div className="filter-bar">
+        <div className="filter-bar"
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center"
+        }}
+        >
           <div className="year-filter">
             <select
               onChange={(e) => setFilteredYear(e.target.value)}
               value={filteredYear}
+              style={{ color: "#000" }}
             >
               <option value="all">All Years</option>
               {years.map((year) => (
@@ -80,6 +86,7 @@ function EventCatalog() {
             <select
               onChange={(e) => setFilteredCategory(e.target.value)}
               value={filteredCategory}
+              style={{ color: "#000" }}
             >
               <option value="all">All Categories</option>
               {categories.map((cat) => (
@@ -114,7 +121,7 @@ function EventCatalog() {
                 <h4 className={`event-badge ${event.category.toLowerCase()}`}>
                   {event.category}
                 </h4>
-                  
+
               </div>
               <p className="event-date">
                 <i className="ri-calendar-line"></i>{" "}

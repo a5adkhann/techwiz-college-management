@@ -9,31 +9,24 @@
 .events-title {
   font-size: 2.5rem;
   text-align: center;
-  color:white;
+  color: white;
   margin-bottom: 30px;
   font-weight: 700;
 }
 
 .events-title span {
   font-size: 2.3rem;
-    font-weight: bold;
-    background: linear-gradient(90deg, #27A5DE 0%, #083F57 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.filter-bar {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 25px;
-  padding-right: 20px; 
+  font-weight: bold;
+  background: linear-gradient(90deg, #27A5DE 0%, #083F57 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .search-wrapper {
   position: relative;
-  width: 250px; 
+  width: 250px;
 }
 
 .search-wrapper i {
@@ -64,7 +57,6 @@
 
 .all-btn {
   background: #0f1a75;
-  color: white;
   border: none;
   padding: 12px 20px;
   border-radius: 30px;
@@ -101,8 +93,8 @@
 }
 
 .event-card {
-  background-color:black;
-  border-radius: 14px  ;
+  background-color: black;
+  border-radius: 14px;
   border: 1px solid #27A5DE;
   padding: 22px;
   transition: transform 0.25s, box-shadow 0.25s;
@@ -133,11 +125,25 @@
   text-transform: uppercase;
 }
 
-.event-badge.technical { background-color: #2563eb; }
-.event-badge.cultural { background-color: #ef4444; }
-.event-badge.sports { background-color: #22c55e; }
-.event-badge.departmental { background-color: #9333ea; }
-.event-badge.academic { background-color: #7c3aed; }
+.event-badge.technical {
+  background-color: #2563eb;
+}
+
+.event-badge.cultural {
+  background-color: #ef4444;
+}
+
+.event-badge.sports {
+  background-color: #22c55e;
+}
+
+.event-badge.departmental {
+  background-color: #9333ea;
+}
+
+.event-badge.academic {
+  background-color: #7c3aed;
+}
 
 .event-date,
 .event-venue,
@@ -150,7 +156,7 @@
 .event-date i,
 .event-venue i {
   margin-right: 6px;
-  color:  #27A5DE;
+  color: #27A5DE;
 }
 
 .no-events {
