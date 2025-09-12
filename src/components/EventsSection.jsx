@@ -116,6 +116,20 @@ function EventsSection() {
               {event.description}
             </p>
 
+            
+            {/* Event Status */}
+            <p
+              style={{
+                fontSize: "0.85rem",
+                lineHeight: "1.3",
+                marginBottom: "15px",
+                fontWeight: "400",
+                color: "#ccc",
+              }}
+            >
+              {event.status}
+            </p>
+
             {/* Button */}
             <button
               style={{

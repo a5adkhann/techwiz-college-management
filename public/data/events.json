@@ -3,6 +3,7 @@
     "id": 1,
     "title": "TechFest 2025",
     "date": "2025-07-20",
+    "status":"Previous",
     "description":
       "A day filled with innovation, workshops, and exciting tech showcases.",
     "image": "../event1.jpg"
@@ -11,6 +12,7 @@
     "id": 2,
     "title": "Cultural Week",
     "date": "2025-08-05",
+    "status":"Previous",
     "description":
       "A vibrant celebration of arts, music, dance, and diverse traditions.",
     "image": "../event2.jpg"
@@ -19,6 +21,7 @@
     "id": 3,
     "title": "AI Workshop",
     "date": "2025-09-15",
+    "status":"Upcoming",
     "description":
       "Hands-on sessions exploring artificial intelligence, machine learning, and real-world applications.",
     "image": "./event3.jpg"
@@ -26,7 +29,8 @@
   {
     "id": 4,
     "title": "Football Championship",
-    "date": "2025-10-10",
+    "date": "2025-09-10",
+    "status":"Previous",
     "description":
       "An action-packed sports festival featuring competitions, fun activities, and team spirit.",
     "image": "./event4.jpg"
@@ -35,6 +39,7 @@
     "id": 5,
     "title": "Science Exhibition",
     "date": "2025-11-05",
+    "status":"Upcoming",
     "description":
       "Students showcase innovative projects and experiments that inspire curiosity and discovery.",
     "image": "./event5.jpg"
@@ -43,6 +48,7 @@
     "id": 6,
     "title": "Alumni Meet",
     "date": "2025-12-20",
+    "status":"Upcoming",
     "description":
       "A reunion event where alumni connect, share experiences, and celebrate achievements together.",
     "image": "./event6.jpg"
