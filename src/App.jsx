@@ -7,6 +7,7 @@ import Contact from './pages/Contact'
 import Registeration from './pages/Registeration'
 import Footer from './components/Footer'
 import Gallery from './pages/Gallery'
+import EventDetail from './components/EventDetail'
 
 const App = () => {
 
@@ -23,6 +24,7 @@ const App = () => {
         <Route path='/contact' element={<Contact />}></Route>
         <Route path='/registeration' element={<Registeration />}></Route>
         <Route path='/gallery' element={<Gallery />}></Route>
+        <Route path='/event/:id' element={<EventDetail />}></Route>
       </Routes>
 
       {!hideNavbarFooter && <Footer />}

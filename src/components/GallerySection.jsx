@@ -68,16 +68,19 @@ const GallerySection = () => {
     </div>
   </div>
 
-  <div className="search-filter">
-    <div className="search-input-wrapper">
-      <input
-        type="text"
-        placeholder="Search by title..."
-        value={searchTerm}
+  <div className="filter-bar">
+        <div className="search-wrapper">
+          <i className="ri-search-line"></i>
+          <input
+            type="text"
+            placeholder="Search events..."
+            value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
-      />
-    </div>
-  </div>
+
+            className="search-input"
+          />
+        </div>
+      </div>
 </div>
 
 

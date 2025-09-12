@@ -1,71 +1,98 @@
 .events-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 30px 20px;
-  background-image: url('./bg-image.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  padding: 40px 20px;
+  background-color: black;
 }
 
 .events-title {
   font-size: 2.5rem;
   text-align: center;
-  color: black;
-  margin-bottom: 25px;
+  color:white;
+  margin-bottom: 30px;
+  font-weight: 700;
 }
-
-
-.controls {
+.filter-bar {
   display: flex;
   justify-content: center;
-  gap: 15px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
+  padding-right: 20px; 
 }
 
-.controls select {
-  padding: 8px 12px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  font-size: 1rem;
+.search-wrapper {
+  position: relative;
+  width: 250px; 
+}
+
+.search-wrapper i {
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  transform: translateY(-50%);
+  color: #777;
+  font-size: 1.1rem;
+  pointer-events: none;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 14px 10px 40px;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #0f1a75;
+  box-shadow: 0 0 6px rgba(15, 26, 117, 0.25);
+  outline: none;
+}
+
+.all-btn {
+  background: #0f1a75;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 30px;
   cursor: pointer;
-  transition: all 0.2s ease;
+  font-weight: 500;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
-.controls select:hover {
-  border-color: #3498db;
+.all-btn:hover {
+  background: #222;
+  transform: translateY(-2px);
 }
-
 
 .events-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 20px;
+  gap: 22px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .events-grid {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1100px) {
   .events-grid {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
-
 .event-card {
-  background-color: #ffffff;
-  border-radius: 10px;
-  padding: 20px;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.event-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  background-color:black;
+  border-radius: 14px  ;
+  border: 1px solid #27A5DE;
+  padding: 22px;
+  transition: transform 0.25s, box-shadow 0.25s;
+  backdrop-filter: blur(6px);
 }
 
 
@@ -73,17 +100,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 
 .event-header h3 {
-  font-size: 1.3rem;
-  color: black;
+  font-size: 1.4rem;
+  color: white;
   margin: 0;
+  font-weight: 600;
 }
 
 .event-badge {
-  padding: 4px 10px;
+  padding: 5px 12px;
   border-radius: 20px;
   font-size: 0.8rem;
   font-weight: bold;
@@ -91,27 +119,29 @@
   text-transform: uppercase;
 }
 
-.event-badge.technical { background-color: blue; }
-.event-badge.cultural { background-color: red; }
-.event-badge.sports { background-color: green; }
-.event-badge.departmental { background-color: purple; }
-.event-badge.academic { background-color: purple; }
+.event-badge.technical { background-color: #2563eb; }
+.event-badge.cultural { background-color: #ef4444; }
+.event-badge.sports { background-color: #22c55e; }
+.event-badge.departmental { background-color: #9333ea; }
+.event-badge.academic { background-color: #7c3aed; }
 
 .event-date,
 .event-venue,
 .event-description {
-  margin: 5px 0;
-  color: black;
+  margin: 6px 0;
+  color: white;
   font-size: 0.95rem;
 }
 
-.event-description {
-  margin-top: 10px;
+.event-date i,
+.event-venue i {
+  margin-right: 6px;
+  color:  #27A5DE;
 }
 
 .no-events {
   text-align: center;
-  color: #888;
+  color: #666;
   font-size: 1.2rem;
-  margin-top: 20px;
+  margin-top: 25px;
 }

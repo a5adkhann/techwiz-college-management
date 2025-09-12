@@ -16,6 +16,7 @@ const Home = () => {
         <Slideshow/>
         <AboutMain/>
         <EventsSection/>
+        <EventCatalog/>
         <FAQ/>
         {/* <EventCatalog/> */}
         <BenefitsAndSuccess/>
