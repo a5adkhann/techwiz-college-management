@@ -47,44 +47,57 @@ const Navbar = ({ handleStorage }) => {
         </div>
 
         <div className={`nav-items ${menuOpen ? "open" : ""}`}>
-          <ul>
-            <li>
-              <NavLink to="/home" end activeClassName="active" onClick={() => setMenuOpen(false)}>
-                Home
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/about" activeClassName="active" onClick={() => setMenuOpen(false)}>
-                About
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/calendar" activeClassName="active" onClick={() => setMenuOpen(false)}>
-                Event Calendar
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/events" activeClassName="active" onClick={() => setMenuOpen(false)}>
-                Event Details
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/registeration" activeClassName="active" onClick={() => setMenuOpen(false)}>
-                Registration
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/gallery" activeClassName="active" onClick={() => setMenuOpen(false)}>
-                Gallery
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/contact" activeClassName="active" onClick={() => setMenuOpen(false)}>
-                Contact Us
-              </NavLink>
-            </li>
-          </ul>
-        </div>
+  <ul>
+    <li>
+      <NavLink to="/home" end activeClassName="active" onClick={() => setMenuOpen(false)}>
+        Home
+      </NavLink>
+    </li>
+    <li>
+      <NavLink to="/about" activeClassName="active" onClick={() => setMenuOpen(false)}>
+        About
+      </NavLink>
+    </li>
+    <li>
+      <NavLink to="/calendar" activeClassName="active" onClick={() => setMenuOpen(false)}>
+        Event Calendar
+      </NavLink>
+    </li>
+    <li>
+      <NavLink to="/events" activeClassName="active" onClick={() => setMenuOpen(false)}>
+        Event Details
+      </NavLink>
+    </li>
+    <li>
+      <NavLink to="/registeration" activeClassName="active" onClick={() => setMenuOpen(false)}>
+        Registration
+      </NavLink>
+    </li>
+    <li>
+      <NavLink to="/gallery" activeClassName="active" onClick={() => setMenuOpen(false)}>
+        Gallery
+      </NavLink>
+    </li>
+    <li>
+      <NavLink to="/contact" activeClassName="active" onClick={() => setMenuOpen(false)}>
+        Contact Us
+      </NavLink>
+    </li>
+
+    <li>
+      <button
+        className="btn-primary" id="mobile-switchUser"
+        onClick={() => {
+          handleStorage();
+          setMenuOpen(false); 
+        }}
+      >
+        Switch User
+      </button>
+    </li>
+  </ul>
+</div>
+
 
         <div className="nav-toggle" onClick={() => setMenuOpen(!menuOpen)}>
           <i className={menuOpen ? "ri-close-line" : "ri-menu-line"}></i>
@@ -93,7 +106,7 @@ const Navbar = ({ handleStorage }) => {
         <div style={{ display: "flex", gap: "25px" }}>
           <button
             style={{ cursor: "pointer", paddingBlock: "8px", fontSize: "16px" }}
-            className="btn-primary"
+            className="btn-primary" id="desktop-switchUser"
             onClick={() => handleStorage()}
           >
             Switch User
