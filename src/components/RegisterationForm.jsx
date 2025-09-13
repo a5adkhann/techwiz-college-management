@@ -1,16 +1,21 @@
 import React from 'react'
 import '../assets/css/registeration.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import BG from './BG';
 
 function RegisterationForm() {
+  const navigate = useNavigate();
+  const handleRegister = (e) => {
+    e.preventDefault();
+    navigate("/home");
+  }
   return (
     <>
       <BG />
       <div className="overall">
       <div className="registration-form-container">
           <h1 className="form-title">Registration</h1>
-          <form>
+          <form onSubmit={handleRegister}>
             <input
               type="text"
               placeholder="Full Name"
