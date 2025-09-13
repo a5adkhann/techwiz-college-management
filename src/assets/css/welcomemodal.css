@@ -10,7 +10,7 @@
   justify-content: center;
   align-items: center;
   z-index: 1000;
-  background-image: url('./bg-image.jpg');
+  background-image: url('../../../public/bg-image.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

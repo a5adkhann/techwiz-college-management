@@ -1,6 +1,6 @@
 .events-container {
   padding: 40px 0px;
-  background: url(./bg-image.jpg);
+  background: url("../../../public/bg-image.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
