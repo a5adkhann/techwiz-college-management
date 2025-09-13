@@ -338,9 +338,13 @@
 
  @media (max-width: 768px) {
    .hero-section {
-     padding: 0 20px;
+     padding: 20px 20px;
    }
-
+.features-grid
+ {
+    display: grid;
+    grid-template-columns: 1fr;
+}
    .main-heading {
      font-size: 28px;
    }

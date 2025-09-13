@@ -32,7 +32,7 @@ function RegisterationForm() {
             />
 
             <div className='registeration-link' style={{marginBottom: "10px"}}>
-              <p>Go to <Link to="/" style={{color: "#27A5DE"}}>Home</Link></p>
+              <p>Go to <Link to="/home" style={{color: "#27A5DE"}}>Home</Link></p>
             </div>
 
             <button type="submit" className="submit-button">

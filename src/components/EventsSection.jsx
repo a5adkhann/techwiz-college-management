@@ -19,139 +19,53 @@ function EventsSection() {
   };
 
   return (
-    <div
-      className="events-section"
-      style={{
-        padding: "40px 20px",
-        backgroundColor: "#000",
-        color: "#fff",
-        fontFamily: "'Anton', sans-serif",
-        textAlign: "center",
-      }}
-    >
-      <h2 data-aos="fade-up" data-aos-duration="2000">
-        Our <span style={{ color: "#1e75a8" }}>Events</span>
-      </h2>
+    <>
+    <div className="events-section">
+  <h2 data-aos="fade-up" data-aos-duration="2000">
+    Our <span>Events</span>
+  </h2>
 
+  <div className="events-grid">
+    {events.map((event) => (
       <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(22%, 1fr))",
-          gap: "40px",
-          padding: "20px 25px",
-          placeItems: "center",
-        }}
+        key={event.id}
+        className="event-card"
+        onClick={() => handleViewDetails(event.id)}
+        data-aos="fade-up"
+        data-aos-duration="2000"
       >
-        {events.map((event) => (
-          <div
-            key={event.id}
-            className="cards"
-            style={{
-              padding: "20px 25px",
-              borderRadius: "20px",
-              backgroundColor: "#0a0a0a",
-              color: "#fff",
-              cursor: "pointer",
-              transition: "all 0.3s ease",
-            }}
-            onClick={() => handleViewDetails(event.id)}
-            onMouseEnter={(e) =>
-              (e.currentTarget.style.boxShadow =
-                "0 10px 25px rgba(51, 153, 204, 0.8), 0 0 20px #3399cc inset")
-            }
-            onMouseLeave={(e) =>
-              (e.currentTarget.style.boxShadow =
-                "0 10px 15px rgba(0, 153, 204, 0.4), 0 0 10px #1e75a8 inset")
-            }
-            data-aos="fade-up" data-aos-duration="2000"
-          >
-            {event.image && (
-              <img
-                src={event.image}
-                alt={event.title}
-                style={{
-                  width: "100%",
-                  height: "150px",
-                  borderRadius: "10px",
-                  objectFit: "cover",
-                  marginBottom: "15px",
-                }}
-              />
-            )}
+        {event.image && (
+          <img
+            src={event.image}
+            alt={event.title}
+            className="event-image"
+          />
+        )}
 
-            <h3 style={{ fontSize: "1.2rem", marginBottom: "10px" }}>
-              {event.title.toUpperCase()}
-            </h3>
+        <h3 className="event-title">{event.title}</h3>
 
-            <p
-              style={{
-                fontSize: "0.85rem",
-                marginBottom: "10px",
-                fontWeight: "600",
-              }}
-            >
-              <strong>Date:</strong> {new Date(event.date).toDateString()}
-            </p>
+        <p className="event-date">
+          <strong>Date:</strong> {new Date(event.date).toDateString()}
+        </p>
 
-            {/* Event Description */}
-            <p
-              style={{
-                fontSize: "0.85rem",
-                lineHeight: "1.3",
-                marginBottom: "15px",
-                fontWeight: "400",
-                color: "#ccc",
-              }}
-            >
-              {event.description}
-            </p>
+        <p className="event-description">{event.description}</p>
+        <p className="event-status">{event.status}</p>
 
-            
-            {/* Event Status */}
-            <p
-              style={{
-                fontSize: "0.85rem",
-                lineHeight: "1.3",
-                marginBottom: "15px",
-                fontWeight: "400",
-                color: "#ccc",
-              }}
-            >
-              {event.status}
-            </p>
-
-            {/* Button */}
-            <button
-              style={{
-                background: "transparent",
-                border: "1px solid #fff",
-                padding: "10px 20px",
-                borderRadius: "10px",
-                color: "white",
-                fontSize: "10px",
-                fontWeight: "600",
-                cursor: "pointer",
-                transition: "all 0.3s ease",
-                textTransform: "uppercase",
-                letterSpacing: "1px",
-              }}
-              onClick={(e) => {
-                e.stopPropagation();
-                handleViewDetails(event.id);
-              }}
-              onMouseEnter={(e) =>
-                (e.currentTarget.style.backgroundColor = "#27A5DE")
-              }
-              onMouseLeave={(e) =>
-                (e.currentTarget.style.backgroundColor = "transparent")
-              }
-            >
-              VIEW MORE DETAILS
-            </button>
-          </div>
-        ))}
+        <button
+          className="view-button"
+          onClick={(e) => {
+            e.stopPropagation();
+            handleViewDetails(event.id);
+          }}
+        >
+          VIEW MORE DETAILS
+        </button>
       </div>
-    </div>
+    ))}
+  </div>
+</div>
+    </>
+
   );
 }
 

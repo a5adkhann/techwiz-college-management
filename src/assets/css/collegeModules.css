@@ -1,120 +1,126 @@
 .modulesSection {
-    padding: 60px 20px;
-    background: #f8f9fb;
-    text-align: center;
-    background-image: url('./bg-image.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
+  padding: 60px 20px;
+  background: #f8f9fb;
+  text-align: center;
+  background-image: url('./bg-image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
-  .sectionTitle {
-    font-size: 28px;
-    font-weight: 700;
-    margin-bottom: 50px;
-    color: #fff;
-    position: relative;
-  }
+.sectionTitle {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: #fff;
+  position: relative;
+}
 
-  .sectionTitle span {
-    font-size: 2rem;
-    font-weight: bold;
-    background: linear-gradient(90deg, #27A5DE 0%, #083F57 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  }
+.sectionTitle span {
+  font-size: 2rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #27A5DE 0%, #083F57 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
 
+.modulesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-content: center;
+  width: 96%;
+  margin: 0 auto;
+}
+
+.moduleCard {
+  background: #000;
+  border-radius: 14px;
+  padding: 28px 22px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05),
+    0 6px 20px rgba(0, 0, 0, 0.06);
+  text-align: left;
+  position: relative;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border: 1px solid #27A5DE;
+}
+
+.moduleCard:hover {
+  background: rgba(45, 139, 207, 0.1);
+  box-shadow: 0 10px 20px rgba(45, 139, 207, 0.4);
+  border-radius: 25px;
+  color: #2d8bcf;
+  transform: translateY(-6px);
+  transition: all 0.3s ease;
+}
+
+.moduleCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12),
+    0 12px 35px rgba(0, 0, 0, 0.08);
+}
+
+.moduleIcon {
+  font-size: 36px;
+  margin-bottom: 18px;
+  color: #2c3e50;
+  transition: transform 0.3s ease;
+}
+
+.moduleCard:hover .moduleIcon {
+  transform: scale(1.1);
+}
+
+.moduleTitle {
+  font-size: 21px;
+  font-weight: 600;
+  margin-bottom: 14px;
+  color: #27A5DE;
+}
+
+.moduleList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.moduleList li {
+  font-size: 15.5px;
+  color: #fff;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 22px;
+  line-height: 1.5;
+}
+
+.moduleList li::before {
+  content: "✔";
+  color: #27ae60;
+  font-size: 14px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.moduleArrow {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  font-size: 20px;
+  color: #27A5DE;
+  opacity: 0.8;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.moduleCard:hover .moduleArrow {
+  transform: translateX(4px);
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px){
   .modulesGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 30px;
-    justify-content: center;
-    max-width: 1150px;
-    margin: 0 auto;
+    grid-template-columns: repeat(1, 1fr);
   }
-
-  .moduleCard {
-    background: #000;
-    border-radius: 14px;
-    padding: 28px 22px;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05),
-      0 6px 20px rgba(0, 0, 0, 0.06);
-    text-align: left;
-    position: relative;
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
-    border: 1px solid #27A5DE;
-  }
-  .moduleCard:hover {
-      background: rgba(45, 139, 207, 0.1);
-      box-shadow: 0 10px 20px rgba(45, 139, 207, 0.4);
-      border-radius: 25px;
-      color: #2d8bcf;
-      transform: translateY(-6px);
-      transition: all 0.3s 
-  ease;
-  }
-
-  .moduleCard:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12),
-      0 12px 35px rgba(0, 0, 0, 0.08);
-  }
-
-  .moduleIcon {
-    font-size: 36px;
-    margin-bottom: 18px;
-    color: #2c3e50;
-    transition: transform 0.3s ease;
-  }
-
-  .moduleCard:hover .moduleIcon {
-    transform: scale(1.1);
-  }
-
-  .moduleTitle {
-    font-size: 21px;
-    font-weight: 600;
-    margin-bottom: 14px;
-    color: #27A5DE;
-  }
-
-  .moduleList {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 20px 0;
-  }
-
-  .moduleList li {
-    font-size: 15.5px;
-    color: #fff;
-    margin-bottom: 10px;
-    position: relative;
-    padding-left: 22px;
-    line-height: 1.5;
-  }
-
-  .moduleList li::before {
-    content: "✔";
-    color: #27ae60;
-    font-size: 14px;
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
-
-  .moduleArrow {
-    position: absolute;
-    right: 18px;
-    bottom: 18px;
-    font-size: 20px;
-    color: #27A5DE;
-    opacity: 0.8;
-    transition: transform 0.25s ease, opacity 0.25s ease;
-  }
-
-  .moduleCard:hover .moduleArrow {
-    transform: translateX(4px);
-    opacity: 1;
-  }
+}

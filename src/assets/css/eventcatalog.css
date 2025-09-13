@@ -1,6 +1,6 @@
 .events-container {
-  padding: 40px 20px;
-  background: url('./bg-image.jpg');
+  padding: 40px 0px;
+  background: url(./bg-image.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -27,6 +27,7 @@
 .search-wrapper {
   position: relative;
   width: 250px;
+  top: -8px;
 }
 
 .search-wrapper i {
@@ -40,7 +41,7 @@
 }
 
 .search-input {
-  width: 100%;
+  width: 80%;
   padding: 10px 14px 10px 40px;
   border: 1px solid #ddd;
   border-radius: 30px;
@@ -99,6 +100,7 @@
   padding: 22px;
   transition: transform 0.25s, box-shadow 0.25s;
   backdrop-filter: blur(6px);
+  width: 500px;
 }
 
 
@@ -107,6 +109,12 @@
   gap: 15px;
   align-items: center;
   margin-bottom: 12px;
+  justify-content: space-between;
+}
+
+.event-header .event-text {
+  display: flex;
+  align-items: center;
 }
 
 .event-header h3 {
@@ -164,4 +172,10 @@
   color: #666;
   font-size: 1.2rem;
   margin-top: 25px;
+}
+
+@media screen and (max-width: 768px){
+  .event-card {
+     width: 300px;
+  }
 }

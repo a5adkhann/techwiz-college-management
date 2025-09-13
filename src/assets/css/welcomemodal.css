@@ -1,0 +1,52 @@
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  background-image: url('./bg-image.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.modal-container {
+  background: transparent;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 600px;
+  border: 1px solid #27A5DE;
+  backdrop-filter: blur(20px);
+}
+
+.modal-container h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.modal-container .name-input {
+  background: transparent;
+  width: 450px;
+  margin-bottom: 10px;
+  border: 1px solid white;
+  padding: 12px;
+  border-radius: 10px;
+  color: white;
+}
+
+.modal-container button {
+  background: transparent;
+}
+
+@media screen and (max-width: 768px) {
+.user-role-message {
+    font-size: 1.2rem;
+  }
+}

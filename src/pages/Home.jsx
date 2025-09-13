@@ -10,19 +10,19 @@ import CollegeModules from '../components/CollegeModules'
 import FAQ from '../components/FaqSection'
 import FeedbackSection from '../components/FeedbackSection'
 
-const Home = () => {
+const Home = ({userName, userRole}) => {
   return (
     <>
-        <WelcomeMessage/>
+        <WelcomeMessage userName={userName} userRole={userRole}/>
         <Slideshow/>
         <AboutMain/>
         <EventsSection/>
         <EventCatalog/>
-        <FAQ/>
-        <FeedbackSection/>
         <BenefitsAndSuccess/>
         <CollegeModules/>
         <ContactSection/>
+        <FAQ/>
+        <FeedbackSection/>
     </>
   )
 }

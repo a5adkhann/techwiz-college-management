@@ -1,66 +1,83 @@
 .feedback {
-  background-color: #000;
+  background: linear-gradient(135deg, #000000, #0a0a0a, #111111);
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px 0;
+  padding: 60px 20px;
+  min-height: 100vh;
 }
+
 .feedback-form-container {
   width: 90%;
   max-width: 680px;
-  padding: 2.5rem;
-  border: 1px solid #27A5DE; 
-  background-color: transparent; 
+  padding: 3rem 2.5rem;
+  border: 1px solid rgba(39, 165, 222, 0.5);
+  background: rgba(0, 0, 0, 0.65);
   border-radius: 20px;
-  backdrop-filter: blur(15px); 
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(39, 165, 222, 0.2);
+  transition: transform 0.3s ease;
 }
+
+.feedback-form-container:hover {
+  transform: translateY(-5px);
+}
+
 .form-title {
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   text-align: center;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1.5rem;
   text-decoration: underline;
-  text-underline-offset: 8px;
-  color: #FFF;
+  text-underline-offset: 10px;
+  color: #27A5DE;
+  letter-spacing: 1px;
 }
 
 .form-input,
 select {
   width: 100%;
-  padding: 0.5rem;
-  margin-bottom: 1rem;
-  border: 1px solid #d1d5db; 
+  padding: 0.8rem 1rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   outline: none;
-  background: transparent;
-  color: white;
-  backdrop-filter: blur(20px);
-  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
 }
 
 .form-input:focus,
 select:focus {
-  border-color: #27A5DE; 
+  border-color: #27A5DE;
+  box-shadow: 0 0 10px #27A5DE;
 }
 
 .form-footer-text {
-  font-size: 0.875rem;
+  font-size: 0.9rem;
   text-align: center;
   margin-bottom: 1rem;
-  color: #FFF;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .submit-button {
   width: 100%;
-  padding: 0.5rem 0;
-  border: 1px solid #d1d5db;
+  padding: 0.8rem 0;
+  border: none;
   text-transform: uppercase;
-  background-color: white;
+  font-weight: bold;
+  background: transparent !important;
+  color: white;
+  border-radius: 10px;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(39, 165, 222, 0.4);
 }
 
 .submit-button:hover {
-  background-color: black;
-  color: white;
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(39, 165, 222, 0.6);
 }

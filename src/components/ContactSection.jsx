@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Phone, Mail, MapPin, User, Building2 } from 'lucide-react';
-import '../assets/css/contact.css'; // ✅ Make sure to create this CSS file
+import '../assets/css/contact.css'; 
 
 const ContactSection = () => {
   const [contacts, setContacts] = useState([]);
@@ -67,7 +67,6 @@ const ContactSection = () => {
   };
 
   useEffect(() => {
-    // Directly set contacts, no loading state needed
     setContacts(sampleContacts);
   }, []);
 

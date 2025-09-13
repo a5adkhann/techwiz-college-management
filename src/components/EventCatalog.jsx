@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { createContext, useEffect, useState } from "react";
 import axios from "axios";
 import "../assets/css/eventcatalog.css";
 
@@ -54,6 +54,19 @@ function EventCatalog() {
   useEffect(() => {
     filterEvents();
   }, [searchTerm, filteredYear, filteredCategory, events]);
+
+const handleBookmark = (event) => {
+  let saved = JSON.parse(localStorage.getItem("bookmarkedEvents")) || [];
+
+  if (!saved.some((e) => e.id === event.id)) {
+    saved.push(event);
+    localStorage.setItem("bookmarkedEvents", JSON.stringify(saved));
+    alert("Event bookmarked!");
+  } else {
+    alert("Already bookmarked!");
+  }
+};
+
 
   return (
     <div className="events-container">
@@ -117,10 +130,16 @@ function EventCatalog() {
           {filteredEvents.map((event, index) => (
             <div className="event-card" key={index} data-aos="fade-up" data-aos-duration="2000">
               <div className="event-header">
+                <div className="event-text">
                 <h3>{event.name}</h3>
                 <h4 className={`event-badge ${event.category.toLowerCase()}`}>
                   {event.category}
                 </h4>
+                </div>
+
+                <div className="bookmark">
+                  <i className="ri-bookmark-line"  onClick={() => handleBookmark(event)}></i>
+                </div>
 
               </div>
               <p className="event-date">

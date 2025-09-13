@@ -46,6 +46,7 @@ const GallerySection = () => {
               id="yearSelect"
               onChange={(e) => setFilteredYear(e.target.value)}
               value={filteredYear}
+              style={{color: "black"}}
             >
               <option value="all">All Years</option>
               {years.map((year) => (
@@ -59,6 +60,7 @@ const GallerySection = () => {
               id="categorySelect"
               onChange={(e) => setFilteredCategory(e.target.value)}
               value={filteredCategory}
+              style={{color: "black"}}
             >
               <option value="all">All Categories</option>
               {categories.map((cat) => (

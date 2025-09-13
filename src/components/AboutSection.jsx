@@ -8,21 +8,26 @@ const AboutSection = () => {
                 className="about-banner"
                 style={{
                     width: "100%",
-                    backgroundImage: "url('./about-banner.jpg')", // Ensure the path is correct
-                    height: "30vh", // You can tweak this for your desired height
-                    backgroundSize: "cover", // This will make sure the image covers the entire div
-                    backgroundPosition: "center", // Centers the background image
-                    backgroundRepeat: "no-repeat", // Prevents repeating the background image
+                    height: "40vh",
+                    backgroundImage: "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('./about-banner.jpg')",
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    backgroundRepeat: "no-repeat",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    color: "white",
                 }}
             >
                 <h1>About Us</h1>
             </div>
 
+
             <div className="about-section">
                 <div className="about-block">
                     <h3 className="about-heading">About Our College</h3>
                     <p className="about-text">
-                        XYZ College of Engineering, located in [City, Country], is a premier institution affiliated with ABC University. Known for its academic excellence, modern campus facilities, and vibrant student community, the college is recognized as a hub for innovation and creativity. Over the years, it has built a strong tradition of nurturing talent through academics, cultural activities, and technical excellence.
+                        At CampusConnect, we believe that learning goes beyond the classroom. Along with academic excellence, our institution thrives on creativity, innovation, and collaboration. Over the years, our students and faculty have built a culture where ideas are shared, talents are nurtured, and achievements are celebrated.
                     </p>
                 </div>
 

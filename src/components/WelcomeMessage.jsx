@@ -1,54 +1,32 @@
-import React from 'react';
-import { Calendar, Users, Bell } from 'lucide-react';
-import '../assets/css/welcomemessage.css';
 import { Link } from 'react-router-dom';
+import '../assets/css/welcomemessage.css';
 
-const WelcomeMessage = ({ collegeName = "Campus" }) => {
+const WelcomeMessage = ({ userName, userRole, collegeName = "CampusConnect" }) => {
   return (
     <section className="welcome-section">
-      <div className="welcome-container">
+      <div className="welcome-container" data-aos="fade-up" data-aos-duration="2000">
         <div className="welcome-content">
-          {/* Main Welcome Message */}
           <div className="welcome-header">
-            <h1 className="welcome-title" data-aos="fade-up" data-aos-duration="2000">
-              Welcome to{' '}
-              <span className="college-name" data-aos="fade-up" data-aos-duration="2000">
-                {collegeName}
-              </span>{' '}
-              Connect
+            <h1 className="welcome-title">
+              Welcome to <span className="college-name">{collegeName},</span>  {userName}!
             </h1>
-            <p className="welcome-subtitle" data-aos="fade-up" data-aos-duration="2000">
-              Stay Updated, Stay Involved!
-            </p>
-            <p className="welcome-description" data-aos="fade-up" data-aos-duration="2000">
+            <h3>{userRole}</h3>
+            <p className="welcome-subtitle">Stay Updated, Stay Involved!</p>
+            <p className="welcome-description">
               Your one-stop destination for all campus events, activities, and opportunities
             </p>
           </div>
 
-          {/* Call to Action Buttons */}
-          <div className="cta-buttons" data-aos="fade-up" data-aos-duration="2000">
-            <Link to="/calendar">
-              <button className="btn-primary">
-                Explore Events
-              </button>
+          <div className="cta-buttons">
+            <Link to="/events">
+            <button className="btn-primary">Explore Events</button>
             </Link>
-          </div>
-
-          {/* User Types Badge */}
-          <div className="user-badge-container" data-aos="fade-up" data-aos-duration="2000">
-            <div className="user-badge">
-              <span className="user-types">
-                Welcome
-                🎓 Students
-                👨‍🏫 Staff
-                👥 Guests
-              </span>
-            </div>
           </div>
         </div>
       </div>
     </section>
   );
 };
+
 
 export default WelcomeMessage;

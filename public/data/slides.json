@@ -1,0 +1,23 @@
+[
+  {
+    "url": "./slide1.jpg",
+    "title": "CELEBRATE SUCCESS WITH",
+    "heading": "GRADUATION EVENTS",
+    "text": "Organize memorable convocations, award ceremonies, and academic celebrations with ease.",
+    "button": "JOIN NOW"
+  },
+  {
+    "url": "./slide2.jpg",
+    "title": "BRING ENERGY TO",
+    "heading": "COLLEGE SPORTS",
+    "text": "Plan tournaments, track participation, and cheer for your teams — all in one platform.",
+    "button": "JOIN NOW"
+  },
+  {
+    "url": "./slide3.jpg",
+    "title": "SHOWCASE TALENT AT",
+    "heading": "CULTURAL FESTS",
+    "text": "From music nights to art exhibitions, manage registrations and schedules effortlessly.",
+    "button": "JOIN NOW"
+  }
+]

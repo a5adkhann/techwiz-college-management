@@ -4,16 +4,16 @@ import '../assets/css/aboutMain.css'
 const AboutMain = () => {
 
   const features = [
-  "Seamless Event Planning",
-  "Easy Registration & Ticketing",
-  "Real-time Updates & Notifications",
-  "Customizable Event Pages",
-  "Collaborative Team Management",
-  "Efficient Volunteer Coordination",
-  "Comprehensive Event Analytics",
-  "Engaging Attendee Experience",
-  "Support for Virtual & In-Person Events"
-];
+    "Seamless Event Planning",
+    "Easy Registration & Ticketing",
+    "Real-time Updates & Notifications",
+    "Customizable Event Pages",
+    "Collaborative Team Management",
+    "Efficient Volunteer Coordination",
+    "Comprehensive Event Analytics",
+    "Engaging Attendee Experience",
+    "Support for Virtual & In-Person Events"
+  ];
 
   return (
     <>
@@ -36,19 +36,19 @@ const AboutMain = () => {
             </div>
             <div className='cta-buttons'>
               <Link to="/about">
-            <button className="btn-primary">
-              Read More
-            </button>
-            </Link>
+                <button className="btn-primary">
+                  Read More
+                </button>
+              </Link>
             </div>
           </div>
-          
+
           <div className="visual-content" data-aos="fade-right" data-aos-duration="2000">
-            <img src="./about-main.png"  />
-            
+            <img src="./about-main.png" />
+
             <div className="glow"></div>
-            
-          
+
+
           </div>
         </div>
       </section>

@@ -46,7 +46,6 @@ const FAQ = () => {
           <div
             key={index}
             className={`faq-item ${openIndex === index ? 'open' : ''}`}
-            data-aos="fade-up" data-aos-duration="2000"
           >
             <div
               className="faq-question"

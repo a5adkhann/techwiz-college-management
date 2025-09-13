@@ -6,7 +6,6 @@ const Footer = () => {
     <>
       <footer>
         <div className="container">
-          {/* Column 1 - About */}
           <div className="col-1">
             <Link to="/">
               <img src="./logo.png" style={{ width: '80px' }} alt="Logo" />
@@ -18,7 +17,6 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Column 2 - Quick Links */}
           <div className="col-2">
             <h3>Quick Links</h3>
             <ul>
@@ -31,7 +29,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Column 3 - Contact Info */}
           <div className="col-3">
             <h3>Contact Info</h3>
             <p>📍 Main Shahra-e-Faisal, near Lal Kothi (house), Karachi, 75400</p>
@@ -39,7 +36,6 @@ const Footer = () => {
             <p>✉️ info@campusconnect.edu</p>
           </div>
 
-          {/* Column 4 - Newsletter */}
           <div className="col-4">
             <h3>Newsletter</h3>
             <form className="footer-form">

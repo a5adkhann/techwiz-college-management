@@ -1,6 +1,4 @@
 import "../assets/css/feedback.css";
-import { useState } from "react";
-import { Link } from "react-router-dom"; // Make sure this import is present
 
 const FeedbackSection = () => {
 
@@ -31,6 +29,7 @@ const FeedbackSection = () => {
         <select>
             <option>TechFest</option>
             <option>Cultural Day</option>
+            <option>Football Championship</option>
         </select>
 
         <label>Give Rating</label>
