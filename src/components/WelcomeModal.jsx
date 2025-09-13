@@ -28,7 +28,6 @@ const WelcomeModal = ({ isOpen, onSubmit }) => {
           className="name-input"
         />
 
-        {/* Role Selection */}
         <div className='cta-buttons'>
           <button onClick={() => setRole('Student')} className={role === 'Student' ? "btn-primary active" : "btn-primary"}>
             Student 🎓
@@ -41,7 +40,6 @@ const WelcomeModal = ({ isOpen, onSubmit }) => {
           </button>
         </div>
 
-        {/* Submit */}
         <div className='cta-buttons'>
           <button onClick={handleSubmit} className={role === 'Guest' ? "btn-primary btn-submit active" : "btn-primary btn-submit"}>
             Continue
