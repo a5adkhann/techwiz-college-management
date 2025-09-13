@@ -108,6 +108,10 @@ body {
   transform: none;    
 }
 
+#mobile-switchUser {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   .nav-items {
     position: absolute;
@@ -133,6 +137,12 @@ body {
   }
 
   .nav-toggle {
+    display: block;
+  }
+  #desktop-switchUser {
+    display: none;
+  }
+  #mobile-switchUser {
     display: block;
   }
 }
