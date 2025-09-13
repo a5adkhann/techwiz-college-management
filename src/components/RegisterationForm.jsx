@@ -15,20 +15,24 @@ function RegisterationForm() {
               type="text"
               placeholder="Full Name"
               className="form-input"
+              required
             />
             <input
               type="email"
               placeholder="Email Address"
               className="form-input"
+              required
             />
             <input
               type="password"
               placeholder="Password"
               className="form-input"
+              required
             />
             <input
               type="file"
               className="form-input"
+              required
             />
 
             <div className='registeration-link' style={{marginBottom: "10px"}}>
