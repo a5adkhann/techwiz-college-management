@@ -61,6 +61,7 @@ const App = () => {
   const handleStorage = () => {
   localStorage.removeItem("userName");
   localStorage.removeItem("userRole");
+  localStorage.removeItem("bookmarkedEvents");
 
   // reset states
   setUserName("");
