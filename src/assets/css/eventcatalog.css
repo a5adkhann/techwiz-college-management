@@ -100,7 +100,6 @@
   padding: 22px;
   transition: transform 0.25s, box-shadow 0.25s;
   backdrop-filter: blur(6px);
-  width: 500px;
 }
 
 
@@ -172,10 +171,4 @@
   color: #666;
   font-size: 1.2rem;
   margin-top: 25px;
-}
-
-@media screen and (max-width: 768px){
-  .event-card {
-     width: 300px;
-  }
 }
