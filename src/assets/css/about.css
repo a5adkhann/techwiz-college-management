@@ -2,7 +2,7 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #1f2937; /* gray-800 */
   padding: 0 100px;
-  background: url("./bg-image.jpg") no-repeat center center;
+  background: url("../../../public/bg-image.jpg") no-repeat center center;
   background-size: cover;
   padding-top: 40px;
 }
