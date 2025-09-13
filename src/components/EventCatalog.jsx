@@ -12,7 +12,7 @@ function EventCatalog() {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get("/data/catalog.json");
+      const response = await axios.get("../../../public/data/catalog.json");
       setEvents(response.data);
       setFilteredEvents(response.data);
     } catch (err) {
