@@ -9,7 +9,7 @@ function EventsSection() {
 
   useEffect(() => {
     axios
-      .get("../../../public/data/events.json")
+      .get("./data/events.json")
       .then((res) => setEvents(res.data))
       .catch((err) => console.error("Error fetching events:", err));
   }, []);
