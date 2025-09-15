@@ -6,65 +6,65 @@ const ContactSection = () => {
   const [contacts, setContacts] = useState([]);
 
   const sampleContacts = {
-    faculty: [
-      {
-        id: 1,
-        name: "Dr. Sarah Johnson",
-        designation: "Dean of Student Affairs",
-        department: "Administration",
-        phone: "+1 (555) 123-4567",
-        email: "s.johnson@college.edu",
-        type: "faculty"
-      },
-      {
-        id: 2,
-        name: "Prof. Michael Chen",
-        designation: "Event Coordinator",
-        department: "Computer Science",
-        phone: "+1 (555) 234-5678",
-        email: "m.chen@college.edu",
-        type: "faculty"
-      },
-      {
-        id: 3,
-        name: "Dr. Emily Rodriguez",
-        designation: "Cultural Activities Head",
-        department: "Arts & Humanities",
-        phone: "+1 (555) 345-6789",
-        email: "e.rodriguez@college.edu",
-        type: "faculty"
-      }
-    ],
-    students: [
-      {
-        id: 4,
-        name: "Alex Thompson",
-        designation: "Student Council President",
-        department: "Business Administration",
-        phone: "+1 (555) 456-7890",
-        email: "a.thompson@student.college.edu",
-        type: "student"
-      },
-      {
-        id: 5,
-        name: "Priya Patel",
-        designation: "Events Committee Chair",
-        department: "Engineering",
-        phone: "+1 (555) 567-8901",
-        email: "p.patel@student.college.edu",
-        type: "student"
-      },
-      {
-        id: 6,
-        name: "James Wilson",
-        designation: "Technical Coordinator",
-        department: "Information Technology",
-        phone: "+1 (555) 678-9012",
-        email: "j.wilson@student.college.edu",
-        type: "student"
-      }
-    ]
-  };
+  faculty: [
+    {
+      id: 1,
+      name: "Dr. Ahmed Khan",
+      designation: "Dean of Student Affairs",
+      department: "Administration",
+      phone: "+92 300 1234567",
+      email: "a.khan@college.edu.pk",
+      type: "faculty"
+    },
+    {
+      id: 2,
+      name: "Prof. Sara Ali",
+      designation: "Event Coordinator",
+      department: "Computer Science",
+      phone: "+92 300 2345678",
+      email: "s.ali@college.edu.pk",
+      type: "faculty"
+    },
+    {
+      id: 3,
+      name: "Dr. Fatima Iqbal",
+      designation: "Cultural Activities Head",
+      department: "Arts & Humanities",
+      phone: "+92 300 3456789",
+      email: "f.iqbal@college.edu.pk",
+      type: "faculty"
+    }
+  ],
+  students: [
+    {
+      id: 4,
+      name: "Ali Hassan",
+      designation: "Student Council President",
+      department: "Business Administration",
+      phone: "+92 300 4567890",
+      email: "a.hassan@student.college.edu.pk",
+      type: "student"
+    },
+    {
+      id: 5,
+      name: "Mariam Khan",
+      designation: "Events Committee Chair",
+      department: "Engineering",
+      phone: "+92 300 5678901",
+      email: "m.khan@student.college.edu.pk",
+      type: "student"
+    },
+    {
+      id: 6,
+      name: "Bilal Ahmed",
+      designation: "Technical Coordinator",
+      department: "Information Technology",
+      phone: "+92 300 6789012",
+      email: "b.ahmed@student.college.edu.pk",
+      type: "student"
+    }
+  ]
+};
 
   useEffect(() => {
     setContacts(sampleContacts);
