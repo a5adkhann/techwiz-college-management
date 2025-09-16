@@ -32,7 +32,7 @@ function EventsSection() {
         Our <span>Events</span>
       </h2>
 
-      <div className="events-grid">
+      <div className="events-container-section">
         {events.map((event) => {
           const eventDate = new Date(event.date);
           const daysLeft = getDaysLeft(eventDate);
