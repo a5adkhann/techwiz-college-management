@@ -126,7 +126,7 @@ const handleBookmark = (event) => {
       {loading ? (
         <p className="loading-text">Loading events...</p>
       ) : filteredEvents.length > 0 ? (
-        <div className="events-grid">
+        <div className="events-container-catalog">
           {filteredEvents.map((event, index) => (
             <div className="event-card" key={index} data-aos="fade-up" data-aos-duration="2000">
               <div className="event-header">
