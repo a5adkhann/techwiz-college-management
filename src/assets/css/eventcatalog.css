@@ -1,20 +1,25 @@
+.events-container-catalog {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  gap: 40px;
+  padding-inline: 40px;
+}
 .events-container {
-  padding: 40px 0px;
+  padding: 40px 20px;
   background: url("../../../public/bg-image.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-
-.events-title {
-  font-size: 2.5rem;
+ .events-title {
+  font-size: 2.3rem;
   text-align: center;
   color: white;
   margin-bottom: 30px;
   font-weight: 700;
 }
-
-.events-title span {
+ .events-title span {
   font-size: 2.3rem;
   font-weight: bold;
   background: linear-gradient(90deg, #27A5DE 0%, #083F57 100%);
@@ -23,12 +28,11 @@
   color: transparent;
   text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
-
-.search-wrapper {
+ .search-wrapper {
   position: relative;
   width: 250px;
   top: -8px;
-}
+}  
 
 .search-wrapper i {
   position: absolute;
@@ -75,21 +79,19 @@
   transform: translateY(-2px);
 }
 
-.events-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 22px;
-}
+/* .events-catalog-grid {
+  padding: 25px 45px;
+} */
 
-@media (min-width: 700px) {
-  .events-grid {
-    grid-template-columns: 1fr 1fr;
+@media screen and (max-width: 700px) {
+  .events-container-catalog {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
-@media (min-width: 1100px) {
-  .events-grid {
-    grid-template-columns: 1fr 1fr 1fr;
+@media screen and (max-width: 1100px) {
+  .events-container-catalog {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
@@ -97,7 +99,24 @@
   background-color: black;
   border-radius: 14px;
   border: 1px solid #27A5DE;
-  padding: 22px;
+  padding: 15px;
+  transition: transform 0.25s, box-shadow 0.25s;
+  backdrop-filter: blur(6px);
+}
+
+.event-header {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 12px;
+  justify-content: space-between;
+}
+
+.event-card {
+  background-color: black;
+  border-radius: 14px;
+  border: 1px solid #27A5DE;
+  padding: 15px;
   transition: transform 0.25s, box-shadow 0.25s;
   backdrop-filter: blur(6px);
 }
@@ -111,17 +130,6 @@
   justify-content: space-between;
 }
 
-.event-header .event-text {
-  display: flex;
-  align-items: center;
-}
-
-.event-header h3 {
-  font-size: 1.4rem;
-  color: white;
-  margin: 0;
-  font-weight: 600;
-}
 
 .event-badge {
   padding: 5px 12px;
