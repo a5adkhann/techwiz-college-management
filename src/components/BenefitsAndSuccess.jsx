@@ -44,7 +44,7 @@ const BenefitsAndSuccess = () => {
             <section className="success-stories-section">
                 <h2 data-aos="fade-up" data-aos-duration="2000">Success <span>Stories</span></h2>
                 <div className="testimonials">
-                    <div className="testimonial-card" data-aos="fade-left" data-aos-duration="2000">
+                    <div className="testimonial-card" data-aos="fade-up" data-aos-duration="2000">
                         <div className="testimonial-header blue">
                             <h4>Mr. C. Zothakhuma</h4>
                             <p>Registrar, Mizoram University</p>
@@ -57,7 +57,7 @@ const BenefitsAndSuccess = () => {
                         </div>
                     </div>
 
-                    <div className="testimonial-card" data-aos="fade-right" data-aos-duration="2000">
+                    <div className="testimonial-card" data-aos="fade-up" data-aos-duration="2000">
                         <div className="testimonial-header blue">
                             <h4>Dr. Swapnil Madhamshettiwar</h4>
                             <p>Vice Principal, SP College, Chandrapur</p>
