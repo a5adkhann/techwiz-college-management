@@ -2,9 +2,10 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   place-items: center;
-  gap: 40px;
+   gap: 15px;
   padding-inline: 15px;
 }
+
 .events-section {
   padding: 40px 20px;
   background-color: #000;
@@ -17,18 +18,18 @@
   color: #1e75a8;
 }
 
-.event-card {
-  padding: 20px 25px;
-  border-radius: 20px;
-  background-color: #0a0a0a;
-  color: #fff;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 10px 15px rgba(0, 153, 204, 0.4), 0 0 10px #1e75a8 inset;
+.events-container-section > .event-card {
+ background-color: black;
+  border-radius: 14px;
+  border: 1px solid #27A5DE;
+  padding: 15px;
+  transition: transform 0.25s, box-shadow 0.25s;
+  backdrop-filter: blur(6px);
 }
 
 .event-card:hover {
-  box-shadow: 0 10px 25px rgba(51, 153, 204, 0.8), 0 0 20px #3399cc inset;
+  box-shadow: 0 10px 25px rgba(51, 153, 204, 0.8),
+              0 0 20px #3399cc inset;
 }
 
 .event-image {
@@ -61,38 +62,29 @@
 }
 
 .view-button {
-   background: transparent;
-      border: 1px solid #fff;
-      padding: 15px 30px;
-      border-radius: 10px;
-      color: white;
-      font-size: 16px;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      text-transform: uppercase;
-      letter-spacing: 1px;
+  background: transparent;
+  border: 1px solid #fff;
+  padding: 15px 30px;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .view-button:hover {
-   transform: translateY(-2px);
-      box-shadow: 0 10px 20px rgba(0, 170, 255, 0.3);
-      border: 1px solid #27A5DE;
-      color: #27A5DE;
-
-
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 170, 255, 0.3);
+  border: 1px solid #27A5DE;
+  color: #27A5DE;
 }
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px){
   .events-container-section {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-
-@media screen and (max-width: 1100px) {
-  .events-container-section {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
