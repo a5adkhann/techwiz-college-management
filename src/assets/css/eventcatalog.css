@@ -79,10 +79,6 @@
   transform: translateY(-2px);
 }
 
-/* .events-catalog-grid {
-  padding: 25px 45px;
-} */
-
 @media screen and (max-width: 700px) {
   .events-container-catalog {
     grid-template-columns: repeat(1, 1fr) !important;
@@ -91,7 +87,7 @@
 
 @media screen and (max-width: 1100px) {
   .events-container-catalog {
-    grid-template-columns: repeat(1, 1fr) !important;
+    grid-template-columns: repeat(2, 1fr) !important;
   }
 }
 
