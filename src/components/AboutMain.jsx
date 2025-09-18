@@ -45,10 +45,6 @@ const AboutMain = () => {
 
           <div className="visual-content" data-aos="fade-right" data-aos-duration="2000">
             <img src="./about-main.png" />
-
-            <div className="glow"></div>
-
-
           </div>
         </div>
       </section>
