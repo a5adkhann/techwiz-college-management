@@ -39,7 +39,7 @@
 
 @media (min-width: 1024px) {
   .welcome-container {
-    padding: 0 2rem;
+    padding: 0 0;
   }
 }
 
@@ -221,10 +221,6 @@
 .welcome-container {
   max-width: 1200px;
   margin: 0 auto;
-}
-
-.welcome-content {
-  padding: 20px;
 }
 
 .welcome-header h1 {
